@@ -1,0 +1,1089 @@
+fileFormatVersion: 2
+guid: dac553137f7028c4b82dc8addf02c0af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7628451852870900693
+    second: Pixel 16 v2 village free_0
+  - first:
+      213: -2568658774039792950
+    second: Pixel 16 v2 village free_1
+  - first:
+      213: 2775033137626870619
+    second: Pixel 16 v2 village free_2
+  - first:
+      213: 7893230655936209085
+    second: Pixel 16 v2 village free_3
+  - first:
+      213: 3042904038868337033
+    second: Pixel 16 v2 village free_4
+  - first:
+      213: -7983203775369438006
+    second: Pixel 16 v2 village free_5
+  - first:
+      213: 2378174495127673260
+    second: Pixel 16 v2 village free_6
+  - first:
+      213: -687770732654208266
+    second: Pixel 16 v2 village free_7
+  - first:
+      213: 1075588692973263115
+    second: Pixel 16 v2 village free_8
+  - first:
+      213: -1788227212203255346
+    second: Pixel 16 v2 village free_9
+  - first:
+      213: -1646713918328196997
+    second: Pixel 16 v2 village free_10
+  - first:
+      213: -5365678344933606407
+    second: Pixel 16 v2 village free_11
+  - first:
+      213: -8242660212207439531
+    second: Pixel 16 v2 village free_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db5a8cfa84bdd960800000000000000
+      internalID: 7628451852870900693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 244
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2fa20547a4a5cd0800000000000000
+      internalID: -2568658774039792950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 228
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53ff289fe5e28620800000000000000
+      internalID: 2775033137626870619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 198
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db02d4126736a8d60800000000000000
+      internalID: 7893230655936209085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 196
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9814952f9119a3a20800000000000000
+      internalID: 3042904038868337033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 212
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc1c8f8676f53190800000000000000
+      internalID: -7983203775369438006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 197
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca99afb6a19f00120800000000000000
+      internalID: 2378174495127673260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 180
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa5c31a92c8476f0800000000000000
+      internalID: -687770732654208266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 180
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b091911b7324dee00800000000000000
+      internalID: 1075588692973263115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 180
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec910fe23d0fe27e0800000000000000
+      internalID: -1788227212203255346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 116
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b703b5b7a62b529e0800000000000000
+      internalID: -1646713918328196997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 52
+        width: 72
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbf93f49f74985b0800000000000000
+      internalID: -5365678344933606407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 52
+        width: 115
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551312f55303c9d80800000000000000
+      internalID: -8242660212207439531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b092092ae220a3d4e84681f702d89d94
+      internalID: -1628074265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e1c8d9852f7154589dd35b3640d7aa
+      internalID: 406389706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdce6b32c68deb247bcd4fb61314cc83
+      internalID: 1106702906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4e73473b5c64a45891fd99255ebe19
+      internalID: 1100719611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 212
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fe6d8ed0f0dae44a7e70e55299f43e
+      internalID: 1108416303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 212
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae09b9f30ad0c67458f893dd097a5153
+      internalID: 136075331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646fdf5586258564b9d7bfb18a81cfb8
+      internalID: -1317894247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f357ab3e273a754b9dc4499da17951c
+      internalID: -659003820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffadea5b50d3e4409114db6a572f07b
+      internalID: -2015436306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf6ce6de732da749b262da0fb34ec24
+      internalID: -1146671627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce792210b487b7408acc6bf8dce4abc
+      internalID: -2135978437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece30fe6f19ead84d9b111090dde522a
+      internalID: 239123832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cc0fb79daae684db0ae05f233cb9bf
+      internalID: -932138434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f4b38a9068a8d48a97214eb2b2ae6d
+      internalID: 1250943965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 212
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6845672e507250f4c82da4b9d422b53f
+      internalID: -238214742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc8e68bd46ad8e4ab6b85d03d2b3686
+      internalID: 1659248986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f29eedd8fda0904c8d475bed4d64625
+      internalID: 1852577646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 228
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8baf539a5c93f348828ea822fe0dac3
+      internalID: 230589590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 212
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed58e790a58f074f8390f2429e862b5
+      internalID: -1196391151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 212
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc049cc377b4aa14e97d769824f93e94
+      internalID: 1660502719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53907a05a07372a4e80c1d1a4c31ebb4
+      internalID: 204691321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03906a9b0b5f73544ae1667339d0d3fd
+      internalID: 1566835079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 244
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6c836f0657a374fa64346368c20740
+      internalID: -905071033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_36
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 181
+        width: 36
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5919b67b2f10414438a911ad3e15077d
+      internalID: 2038094423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_37
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 213
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e62a504dd56eb94d9408c80a7c03ae5
+      internalID: -1851979533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_38
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 196
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d869ae31063ea4c82b4e67bcb7fb05
+      internalID: 1886128669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_39
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 196
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30da1eed460f7b4faced5483e8d45ee
+      internalID: -815492583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 93aef308c5930ef45b458db50c7b4fa5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel 16 v2 village free_0: 7628451852870900693
+      Pixel 16 v2 village free_1: -2568658774039792950
+      Pixel 16 v2 village free_10: -1646713918328196997
+      Pixel 16 v2 village free_11: -5365678344933606407
+      Pixel 16 v2 village free_12: -8242660212207439531
+      Pixel 16 v2 village free_13: -1628074265
+      Pixel 16 v2 village free_14: 406389706
+      Pixel 16 v2 village free_15: 1106702906
+      Pixel 16 v2 village free_16: 1100719611
+      Pixel 16 v2 village free_17: 1108416303
+      Pixel 16 v2 village free_18: 136075331
+      Pixel 16 v2 village free_19: -1317894247
+      Pixel 16 v2 village free_2: 2775033137626870619
+      Pixel 16 v2 village free_20: -659003820
+      Pixel 16 v2 village free_21: -2015436306
+      Pixel 16 v2 village free_22: -1146671627
+      Pixel 16 v2 village free_23: -2135978437
+      Pixel 16 v2 village free_24: 239123832
+      Pixel 16 v2 village free_25: -932138434
+      Pixel 16 v2 village free_26: 1250943965
+      Pixel 16 v2 village free_27: -238214742
+      Pixel 16 v2 village free_28: 1659248986
+      Pixel 16 v2 village free_29: 1852577646
+      Pixel 16 v2 village free_3: 7893230655936209085
+      Pixel 16 v2 village free_30: 230589590
+      Pixel 16 v2 village free_31: -1196391151
+      Pixel 16 v2 village free_32: 1660502719
+      Pixel 16 v2 village free_33: 204691321
+      Pixel 16 v2 village free_34: 1566835079
+      Pixel 16 v2 village free_35: -905071033
+      Pixel 16 v2 village free_36: 2038094423
+      Pixel 16 v2 village free_37: -1851979533
+      Pixel 16 v2 village free_38: 1886128669
+      Pixel 16 v2 village free_39: -815492583
+      Pixel 16 v2 village free_4: 3042904038868337033
+      Pixel 16 v2 village free_5: -7983203775369438006
+      Pixel 16 v2 village free_6: 2378174495127673260
+      Pixel 16 v2 village free_7: -687770732654208266
+      Pixel 16 v2 village free_8: 1075588692973263115
+      Pixel 16 v2 village free_9: -1788227212203255346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
