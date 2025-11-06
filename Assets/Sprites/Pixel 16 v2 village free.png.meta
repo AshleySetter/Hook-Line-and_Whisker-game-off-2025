@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_0
+      name: path1
       rect:
         serializedVersion: 2
         x: 32
@@ -171,13 +171,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_1
+      name: Fence1
       rect:
         serializedVersion: 2
-        x: 169
-        y: 244
-        width: 30
-        height: 13
+        x: 164
+        y: 233
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,13 +193,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_2
+      name: Bench1
       rect:
         serializedVersion: 2
         x: 208
         y: 228
         width: 32
-        height: 23
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,13 +215,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_3
+      name: lanternPost2
       rect:
         serializedVersion: 2
-        x: 164
-        y: 198
-        width: 21
-        height: 42
+        x: 155
+        y: 160
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,12 +237,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_4
+      name: OpenBoxUpper
       rect:
         serializedVersion: 2
-        x: 209
-        y: 196
-        width: 14
+        x: 260
+        y: 176
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -259,13 +259,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_5
+      name: NailedBoxLower
       rect:
         serializedVersion: 2
-        x: 239
-        y: 212
+        x: 257
+        y: 127
         width: 16
-        height: 22
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +284,10 @@ TextureImporter:
       name: Pixel 16 v2 village free_6
       rect:
         serializedVersion: 2
-        x: 193
-        y: 197
-        width: 14
-        height: 12
+        x: 192
+        y: 187
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,13 +303,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_7
+      name: NailedBoxUpper
       rect:
         serializedVersion: 2
-        x: 193
-        y: 180
-        width: 14
-        height: 14
+        x: 257
+        y: 143
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,13 +325,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_8
+      name: BlueFlowerLower
       rect:
         serializedVersion: 2
-        x: 212
-        y: 180
-        width: 9
-        height: 14
+        x: 236
+        y: 148
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,13 +347,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_9
+      name: BlueFlowerUpper
       rect:
         serializedVersion: 2
-        x: 228
-        y: 180
-        width: 9
-        height: 14
+        x: 236
+        y: 164
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,13 +369,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_10
+      name: StallLower
       rect:
         serializedVersion: 2
         x: 19
         y: 116
         width: 43
-        height: 40
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,13 +391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_11
+      name: RedHouseLower
       rect:
         serializedVersion: 2
         x: 68
         y: 52
         width: 72
-        height: 101
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -413,13 +413,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_12
+      name: BlueHouseLower
       rect:
         serializedVersion: 2
-        x: 148
+        x: 150
         y: 52
-        width: 115
-        height: 69
+        width: 113
+        height: 51
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,7 +435,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_13
+      name: path2
       rect:
         serializedVersion: 2
         x: 48
@@ -457,7 +457,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_14
+      name: path3
       rect:
         serializedVersion: 2
         x: 64
@@ -479,7 +479,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_15
+      name: path7
       rect:
         serializedVersion: 2
         x: 64
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_16
+      name: path8
       rect:
         serializedVersion: 2
         x: 80
@@ -523,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_17
+      name: path12
       rect:
         serializedVersion: 2
         x: 64
@@ -545,7 +545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_18
+      name: path13
       rect:
         serializedVersion: 2
         x: 80
@@ -567,7 +567,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_19
+      name: path18
       rect:
         serializedVersion: 2
         x: 80
@@ -589,7 +589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_20
+      name: path17
       rect:
         serializedVersion: 2
         x: 64
@@ -611,7 +611,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_21
+      name: path21
       rect:
         serializedVersion: 2
         x: 64
@@ -633,7 +633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_22
+      name: path20
       rect:
         serializedVersion: 2
         x: 48
@@ -655,7 +655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_23
+      name: path19
       rect:
         serializedVersion: 2
         x: 32
@@ -677,7 +677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_24
+      name: path15
       rect:
         serializedVersion: 2
         x: 32
@@ -699,7 +699,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_25
+      name: path16
       rect:
         serializedVersion: 2
         x: 48
@@ -721,7 +721,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_26
+      name: path14
       rect:
         serializedVersion: 2
         x: 16
@@ -743,7 +743,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_27
+      name: path9
       rect:
         serializedVersion: 2
         x: 16
@@ -765,7 +765,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_28
+      name: path4
       rect:
         serializedVersion: 2
         x: 16
@@ -787,7 +787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_29
+      name: path5
       rect:
         serializedVersion: 2
         x: 32
@@ -809,7 +809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_30
+      name: path6
       rect:
         serializedVersion: 2
         x: 48
@@ -831,7 +831,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_31
+      name: path11
       rect:
         serializedVersion: 2
         x: 48
@@ -853,7 +853,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_32
+      name: path10
       rect:
         serializedVersion: 2
         x: 32
@@ -875,7 +875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_33
+      name: pathBase1
       rect:
         serializedVersion: 2
         x: 96
@@ -897,7 +897,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_34
+      name: pathMossy
       rect:
         serializedVersion: 2
         x: 128
@@ -919,7 +919,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_35
+      name: pathBase2
       rect:
         serializedVersion: 2
         x: 112
@@ -941,13 +941,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_36
+      name: StoneStairs
       rect:
         serializedVersion: 2
-        x: 102
+        x: 104
         y: 181
-        width: 36
-        height: 15
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -963,13 +963,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_37
+      name: DirtStairs
       rect:
         serializedVersion: 2
         x: 104
         y: 213
         width: 32
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,13 +985,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_38
+      name: ClosedBoxUpper
       rect:
         serializedVersion: 2
-        x: 225
-        y: 196
-        width: 14
-        height: 14
+        x: 257
+        y: 260
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1010,10 +1010,10 @@ TextureImporter:
       name: Pixel 16 v2 village free_39
       rect:
         serializedVersion: 2
-        x: 241
-        y: 196
-        width: 14
-        height: 15
+        x: 257
+        y: 244
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,6 +1024,314 @@ TextureImporter:
       bones: []
       spriteID: c30da1eed460f7b4faced5483e8d45ee
       internalID: -815492583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHouseUpper
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 107
+        width: 72
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdb9fadaa17cce42a53ad670d91e743
+      internalID: 113797472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueHouseUpper
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 103
+        width: 114
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ebb5d6a9c68ae46bffe0270bf89080
+      internalID: 1594726115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StallUpper
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 131
+        width: 43
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d08d154e4c38646aca64ec8b9a36bf
+      internalID: 1674500488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 249
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2285f5e42a1a23c4ba720bcfc9daf77d
+      internalID: -1202252437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bench2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 238
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b39d47b008a01c468d63721aa708f18
+      internalID: 35981194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lanternPost1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 146
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1e2d9357635f649b5fcca5c9c9e6a0
+      internalID: -1379060200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel 16 v2 village free_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 203
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0d04c8b3247ae43be70d387409a94b
+      internalID: -1363538559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxPileLower
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 202
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb8796e1ad60944e9b389bff5c39d1c
+      internalID: 500390416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoxPileUpper
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 218
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b06c1d89b1c8e47a037f3f48ec15a1
+      internalID: 619637920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBoxLower
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f53ed274a3c4d745a15977d7750d092
+      internalID: 1006271353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowFlowerLower
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 148
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1216b1352f20ff94d9353246ffe67e74
+      internalID: 235165193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowFlowerUpper
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 164
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e229c0a2ecc4847a2296059ee06972
+      internalID: -286972936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BucketLower
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9ac058f3b54a1438666ba5e0b66982
+      internalID: -955732630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BucketUpper
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837c447497de58a409d025c38b945ec1
+      internalID: -75895007
       vertices: []
       indices: 
       edges: []
@@ -1042,46 +1350,60 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pixel 16 v2 village free_0: 7628451852870900693
-      Pixel 16 v2 village free_1: -2568658774039792950
-      Pixel 16 v2 village free_10: -1646713918328196997
-      Pixel 16 v2 village free_11: -5365678344933606407
-      Pixel 16 v2 village free_12: -8242660212207439531
-      Pixel 16 v2 village free_13: -1628074265
-      Pixel 16 v2 village free_14: 406389706
-      Pixel 16 v2 village free_15: 1106702906
-      Pixel 16 v2 village free_16: 1100719611
-      Pixel 16 v2 village free_17: 1108416303
-      Pixel 16 v2 village free_18: 136075331
-      Pixel 16 v2 village free_19: -1317894247
-      Pixel 16 v2 village free_2: 2775033137626870619
-      Pixel 16 v2 village free_20: -659003820
-      Pixel 16 v2 village free_21: -2015436306
-      Pixel 16 v2 village free_22: -1146671627
-      Pixel 16 v2 village free_23: -2135978437
-      Pixel 16 v2 village free_24: 239123832
-      Pixel 16 v2 village free_25: -932138434
-      Pixel 16 v2 village free_26: 1250943965
-      Pixel 16 v2 village free_27: -238214742
-      Pixel 16 v2 village free_28: 1659248986
-      Pixel 16 v2 village free_29: 1852577646
-      Pixel 16 v2 village free_3: 7893230655936209085
-      Pixel 16 v2 village free_30: 230589590
-      Pixel 16 v2 village free_31: -1196391151
-      Pixel 16 v2 village free_32: 1660502719
-      Pixel 16 v2 village free_33: 204691321
-      Pixel 16 v2 village free_34: 1566835079
-      Pixel 16 v2 village free_35: -905071033
-      Pixel 16 v2 village free_36: 2038094423
-      Pixel 16 v2 village free_37: -1851979533
-      Pixel 16 v2 village free_38: 1886128669
+      Bench1: 2775033137626870619
+      Bench2: 35981194
+      BlueFlowerLower: 1075588692973263115
+      BlueFlowerUpper: -1788227212203255346
+      BlueHouseLower: -8242660212207439531
+      BlueHouseUpper: 1594726115
+      BoxPileLower: 500390416
+      BoxPileUpper: 619637920
+      BucketLower: -955732630
+      BucketUpper: -75895007
+      ClosedBoxUpper: 1886128669
+      DirtStairs: -1851979533
+      Fence1: -2568658774039792950
+      Fence2: -1202252437
+      NailedBoxLower: -7983203775369438006
+      NailedBoxUpper: -687770732654208266
+      OpenBoxLower: 1006271353
+      OpenBoxUpper: 3042904038868337033
+      Pixel 16 v2 village free_0: -1363538559
       Pixel 16 v2 village free_39: -815492583
-      Pixel 16 v2 village free_4: 3042904038868337033
-      Pixel 16 v2 village free_5: -7983203775369438006
       Pixel 16 v2 village free_6: 2378174495127673260
-      Pixel 16 v2 village free_7: -687770732654208266
-      Pixel 16 v2 village free_8: 1075588692973263115
-      Pixel 16 v2 village free_9: -1788227212203255346
+      RedHouseLower: -5365678344933606407
+      RedHouseUpper: 113797472
+      StallLower: -1646713918328196997
+      StallUpper: 1674500488
+      StoneStairs: 2038094423
+      YellowFlowerLower: 235165193
+      YellowFlowerUpper: -286972936
+      lanternPost1: -1379060200
+      lanternPost2: 7893230655936209085
+      path1: 7628451852870900693
+      path10: 1660502719
+      path11: -1196391151
+      path12: 1108416303
+      path13: 136075331
+      path14: 1250943965
+      path15: 239123832
+      path16: -932138434
+      path17: -659003820
+      path18: -1317894247
+      path19: -2135978437
+      path2: -1628074265
+      path20: -1146671627
+      path21: -2015436306
+      path3: 406389706
+      path4: 1659248986
+      path5: 1852577646
+      path6: 230589590
+      path7: 1106702906
+      path8: 1100719611
+      path9: -238214742
+      pathBase1: 204691321
+      pathBase2: -905071033
+      pathMossy: 1566835079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
