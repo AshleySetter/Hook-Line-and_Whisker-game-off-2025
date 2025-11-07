@@ -116,12 +116,12 @@ TextureImporter:
       name: Fence's copiar_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1
-        width: 40
-        height: 79
+        x: 5
+        y: 32
+        width: 6
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +134,121 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fence's copiar_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 66
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b764569d89ff144bd79dfab2798e5e
+      internalID: -1354207402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence's copiar_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 66
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb40569d6610c3442a10e7495bc0622b
+      internalID: -2133402994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence's copiar_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 16
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b269350849327649b76de58876374ac
+      internalID: 734941328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence's copiar_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4694990ef5571d64fabef72ca55967c4
+      internalID: 1986696250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence's copiar_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 32
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e064f94a16a5db145b580b7c1f3719ed
+      internalID: -115863369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a51d667ae0e48694ba2ca2ca5299ad19
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +259,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Fence's copiar_0: 3700460722193438205
+      Fence's copiar_1: -1354207402
+      Fence's copiar_2: -2133402994
+      Fence's copiar_3: 734941328
+      Fence's copiar_4: 1986696250
+      Fence's copiar_5: -115863369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

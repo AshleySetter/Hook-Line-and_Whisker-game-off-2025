@@ -171,15 +171,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fence1
+      name: Fence
       rect:
         serializedVersion: 2
-        x: 164
-        y: 233
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 165
+        y: 245
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.50552064, y: 0.29617426}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,15 +193,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bench1
+      name: Bench
       rect:
         serializedVersion: 2
         x: 208
         y: 228
         width: 32
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.29118878}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,59 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lanternPost2
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 160
-        width: 22
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db02d4126736a8d60800000000000000
-      internalID: 7893230655936209085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OpenBoxUpper
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9814952f9119a3a20800000000000000
-      internalID: 3042904038868337033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NailedBoxLower
+      name: NailedBox
       rect:
         serializedVersion: 2
         x: 257
-        y: 127
+        y: 134
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.28263855}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,13 +237,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_6
+      name: Vase
       rect:
         serializedVersion: 2
-        x: 192
-        y: 187
-        width: 16
-        height: 16
+        x: 193
+        y: 197
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,37 +259,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NailedBoxUpper
+      name: BlueFlower
       rect:
         serializedVersion: 2
-        x: 257
-        y: 143
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fa5c31a92c8476f0800000000000000
-      internalID: -687770732654208266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueFlowerLower
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 148
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 240
+        y: 157
+        width: 9
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4632026, y: 0.27524677}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,37 +281,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlueFlowerUpper
-      rect:
-        serializedVersion: 2
-        x: 236
-        y: 164
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec910fe23d0fe27e0800000000000000
-      internalID: -1788227212203255346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StallLower
+      name: Stall
       rect:
         serializedVersion: 2
         x: 19
         y: 116
         width: 43
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3054096}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -391,37 +303,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedHouseLower
+      name: BlueHouse
       rect:
         serializedVersion: 2
-        x: 68
+        x: 149
         y: 52
-        width: 72
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fbf93f49f74985b0800000000000000
-      internalID: -5365678344933606407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueHouseLower
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 52
-        width: 113
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 114
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4898311, y: 0.26958698}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -985,37 +875,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ClosedBoxUpper
+      name: ClosedBox
       rect:
         serializedVersion: 2
         x: 257
-        y: 260
+        y: 252
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5d869ae31063ea4c82b4e67bcb7fb05
-      internalID: 1886128669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixel 16 v2 village free_39
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 244
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 15
+      alignment: 9
+      pivot: {x: 0.48965073, y: 0.34543255}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1029,125 +897,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedHouseUpper
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 107
-        width: 72
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fdb9fadaa17cce42a53ad670d91e743
-      internalID: 113797472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlueHouseUpper
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 103
-        width: 114
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37ebb5d6a9c68ae46bffe0270bf89080
-      internalID: 1594726115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StallUpper
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 131
-        width: 43
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27d08d154e4c38646aca64ec8b9a36bf
-      internalID: 1674500488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fence2
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 249
-        width: 32
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2285f5e42a1a23c4ba720bcfc9daf77d
-      internalID: -1202252437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bench2
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 238
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b39d47b008a01c468d63721aa708f18
-      internalID: 35981194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lanternPost1
+      name: LanternPost
       rect:
         serializedVersion: 2
         x: 155
-        y: 146
-        width: 22
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 148
+        width: 21
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5000007, y: 0.13723682}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1161,37 +919,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixel 16 v2 village free_0
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 203
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c0d04c8b3247ae43be70d387409a94b
-      internalID: -1363538559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoxPileLower
+      name: BoxPile
       rect:
         serializedVersion: 2
         x: 258
-        y: 202
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 207
+        width: 15
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2555295}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1205,37 +941,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoxPileUpper
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 218
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36b06c1d89b1c8e47a037f3f48ec15a1
-      internalID: 619637920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OpenBoxLower
+      name: OpenBox
       rect:
         serializedVersion: 2
         x: 260
-        y: 160
+        y: 168
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 14
+      alignment: 9
+      pivot: {x: 0.47929955, y: 0.334392}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1249,15 +963,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YellowFlowerLower
+      name: YellowFlower
       rect:
         serializedVersion: 2
-        x: 213
-        y: 148
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 217
+        y: 157
+        width: 9
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4447988, y: 0.25158802}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1271,37 +985,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: YellowFlowerUpper
+      name: Bucket
       rect:
         serializedVersion: 2
-        x: 213
-        y: 164
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09e229c0a2ecc4847a2296059ee06972
-      internalID: -286972936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BucketLower
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 149
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 192
+        y: 158
+        width: 14
+        height: 14
+      alignment: 9
+      pivot: {x: 0.511831, y: 0.23975809}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1315,23 +1007,23 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BucketUpper
+      name: RedHouse
       rect:
         serializedVersion: 2
-        x: 191
-        y: 165
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 52
+        width: 72
+        height: 101
+      alignment: 9
+      pivot: {x: 0.50230014, y: 0.19009717}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 837c447497de58a409d025c38b945ec1
-      internalID: -75895007
+      spriteID: 4608941d754d910488eb1ae4a8969973
+      internalID: -2077681239
       vertices: []
       indices: 
       edges: []
@@ -1350,35 +1042,37 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bench1: 2775033137626870619
+      Bench: 2775033137626870619
       Bench2: 35981194
-      BlueFlowerLower: 1075588692973263115
+      BlueFlower: 1075588692973263115
       BlueFlowerUpper: -1788227212203255346
-      BlueHouseLower: -8242660212207439531
+      BlueHouse: -8242660212207439531
+      BlueHouseMiddle: 1996734818
       BlueHouseUpper: 1594726115
-      BoxPileLower: 500390416
+      BoxPile: 500390416
       BoxPileUpper: 619637920
-      BucketLower: -955732630
+      Bucket: -955732630
       BucketUpper: -75895007
+      ClosedBox: -815492583
       ClosedBoxUpper: 1886128669
       DirtStairs: -1851979533
-      Fence1: -2568658774039792950
+      Fence: -2568658774039792950
       Fence2: -1202252437
-      NailedBoxLower: -7983203775369438006
+      LanternPost: -1379060200
+      NailedBox: -7983203775369438006
       NailedBoxUpper: -687770732654208266
-      OpenBoxLower: 1006271353
+      OpenBox: 1006271353
       OpenBoxUpper: 3042904038868337033
       Pixel 16 v2 village free_0: -1363538559
-      Pixel 16 v2 village free_39: -815492583
-      Pixel 16 v2 village free_6: 2378174495127673260
-      RedHouseLower: -5365678344933606407
+      RedHouse: -2077681239
+      RedHouseMiddle: -5365678344933606407
       RedHouseUpper: 113797472
-      StallLower: -1646713918328196997
+      Stall: -1646713918328196997
       StallUpper: 1674500488
       StoneStairs: 2038094423
-      YellowFlowerLower: 235165193
+      Vase: 2378174495127673260
+      YellowFlower: 235165193
       YellowFlowerUpper: -286972936
-      lanternPost1: -1379060200
       lanternPost2: 7893230655936209085
       path1: 7628451852870900693
       path10: 1660502719
