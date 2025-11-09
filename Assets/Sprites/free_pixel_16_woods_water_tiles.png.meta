@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_4
+      name: Ripple3
       rect:
         serializedVersion: 2
         x: 124
@@ -235,7 +235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_5
+      name: WaterRock
       rect:
         serializedVersion: 2
         x: 106
@@ -477,7 +477,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_19
+      name: Ripple1
       rect:
         serializedVersion: 2
         x: 93
@@ -499,7 +499,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_20
+      name: Ripple2
       rect:
         serializedVersion: 2
         x: 111
@@ -631,7 +631,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_27
+      name: waterPlant
       rect:
         serializedVersion: 2
         x: 92
@@ -653,7 +653,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_28
+      name: WaterLilyPad
       rect:
         serializedVersion: 2
         x: 106
@@ -741,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_pixel_16_woods_water_tiles_11
+      name: WaterBullrush
       rect:
         serializedVersion: 2
         x: 124
@@ -778,10 +778,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Ripple1: -790839207
+      Ripple2: 941315244
+      Ripple3: -4797357410256235424
+      WaterBullrush: -1648154892
+      WaterLilyPad: -548731187
+      WaterRock: -602135005
       free_pixel_16_woods_water_tiles_0: 5010638007019289591
       free_pixel_16_woods_water_tiles_1: 792861470581354995
       free_pixel_16_woods_water_tiles_10: -113258350
-      free_pixel_16_woods_water_tiles_11: -1648154892
       free_pixel_16_woods_water_tiles_12: -549502781
       free_pixel_16_woods_water_tiles_13: 1712948552
       free_pixel_16_woods_water_tiles_14: 1115734659
@@ -789,27 +794,22 @@ TextureImporter:
       free_pixel_16_woods_water_tiles_16: -16417322
       free_pixel_16_woods_water_tiles_17: -668510033
       free_pixel_16_woods_water_tiles_18: 1445030538
-      free_pixel_16_woods_water_tiles_19: -790839207
       free_pixel_16_woods_water_tiles_2: -7956827362899014455
-      free_pixel_16_woods_water_tiles_20: 941315244
       free_pixel_16_woods_water_tiles_21: -498818330
       free_pixel_16_woods_water_tiles_22: 387334434
       free_pixel_16_woods_water_tiles_23: 925384353
       free_pixel_16_woods_water_tiles_24: 94789292
       free_pixel_16_woods_water_tiles_25: 1880813752
       free_pixel_16_woods_water_tiles_26: -1528555982
-      free_pixel_16_woods_water_tiles_27: 2130532692
-      free_pixel_16_woods_water_tiles_28: -548731187
       free_pixel_16_woods_water_tiles_29: 5524245
       free_pixel_16_woods_water_tiles_3: -2333001479436192929
       free_pixel_16_woods_water_tiles_30: 681539339
       free_pixel_16_woods_water_tiles_31: 790854528
-      free_pixel_16_woods_water_tiles_4: -4797357410256235424
-      free_pixel_16_woods_water_tiles_5: -602135005
       free_pixel_16_woods_water_tiles_6: -1425739455
       free_pixel_16_woods_water_tiles_7: -625567409
       free_pixel_16_woods_water_tiles_8: 52955137
       free_pixel_16_woods_water_tiles_9: 1155455915
+      waterPlant: 2130532692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
