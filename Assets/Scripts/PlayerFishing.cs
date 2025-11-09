@@ -8,6 +8,7 @@ public class PlayerFishing : MonoBehaviour
 
     [SerializeField] private GameObject waterRipples;
     [SerializeField] private GameObject waterSplash;
+    [SerializeField] private FishSO[] fishes;
     private FishingState fishingState;
     private float timeToCast = 0.5f; // length of cast animation
     private float castingTimer;
@@ -21,6 +22,9 @@ public class PlayerFishing : MonoBehaviour
     private float bobberMaxAngle = 20;
     private float bobberMinDistance = 2;
     private float bobberMaxDistance = 5;
+    private float fightTime;
+    private float fightTimer;
+    private FishSO hookedFish;
 
     public enum FishingState
     {
@@ -108,7 +112,6 @@ public class PlayerFishing : MonoBehaviour
                 castingTimer += Time.deltaTime;
                 break;
             case FishingState.Waiting:
-
                 if (waitingTimer > waitingTime)
                 {
                     hookingTimer = 0;
@@ -119,13 +122,25 @@ public class PlayerFishing : MonoBehaviour
             case FishingState.HookedFish:
                 if (hookingTimer > timeToHook)
                 {
+                    hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length - 1)];
                     waterRipples.SetActive(false);
                     waterSplash.SetActive(true);
                     fishingState = FishingState.Fighting;
+                    fightTimer = 0;
+                    fightTime = UnityEngine.Random.Range(hookedFish.minFightTime, hookedFish.maxFightTime);
                 }
                 hookingTimer += Time.deltaTime;
                 break;
             case FishingState.Fighting:
+                if (fightTimer > fightTime)
+                {
+                    fishingState = FishingState.Yankable;
+                    waterRipples.SetActive(true);
+                    waterSplash.SetActive(false);
+                }
+                fightTimer += Time.deltaTime;
+                break;
+            case FishingState.Yankable:
                 break;
         }
     }
