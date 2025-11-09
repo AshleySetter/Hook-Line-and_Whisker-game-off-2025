@@ -188,6 +188,8 @@ public class PlayerFishing : MonoBehaviour
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
                 Debug.Log($"You caught a {hookedFish.fishName}");
+                CatchDisplay.Instance.SetCaughtFish(hookedFish);
+                CatchDisplay.Instance.SetActive();
                 fishingState = FishingState.NotFishing;
                 break;
             case FishingState.Failed:
