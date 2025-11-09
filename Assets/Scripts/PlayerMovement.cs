@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerFishing.Instance.GetIsFishing())
+        {
+            return;
+        }
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalised();
         rigidBody.linearVelocity = inputVector * walkSpeed;
         if (rigidBody.linearVelocity.magnitude > 0)

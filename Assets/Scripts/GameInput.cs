@@ -32,6 +32,7 @@ public class GameInput : MonoBehaviour
 
     private void Interact_performed(InputAction.CallbackContext context)
     {
+        Debug.Log("Interact performed");
         OnInteractAction?.Invoke(this, EventArgs.Empty);
     }
 }
