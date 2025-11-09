@@ -25,6 +25,10 @@ public class PlayerFishing : MonoBehaviour
     private float fightTime;
     private float fightTimer;
     private FishSO hookedFish;
+    private float fishAngle;
+    private float fishDistance;
+    private float reelStrength = 0.5f;
+    private float catchDistance = 1f;
 
     public enum FishingState
     {
@@ -33,8 +37,9 @@ public class PlayerFishing : MonoBehaviour
         Waiting,
         HookedFish,
         Fighting,
-        Yankable,
+        Reelable,
         Caught,
+        Failed
     }
     
     public bool IsFishingAllowed()
@@ -57,22 +62,54 @@ public class PlayerFishing : MonoBehaviour
     private void Start()
     {
         GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
+        GameInput.Instance.OnReelAction += GameInput_OnReelAction;
         fishingState = FishingState.NotFishing;
         castingTimer = 0;
-        bobberLocation = GetNextBobberLocation();
+        SetNextBobberLocation();
         waterRipples.SetActive(false);
         waterSplash.SetActive(false);
     }
-    
-    private Vector3 GetNextBobberLocation()
+
+    private void GameInput_OnReelAction(object sender, EventArgs e)
     {
-        float distance = UnityEngine.Random.Range(bobberMinDistance, bobberMaxDistance);
-        float angle = Mathf.Deg2Rad * UnityEngine.Random.Range(-bobberMaxAngle, +bobberMaxAngle);
-        return new Vector3(
-            distance * Mathf.Cos(Mathf.PI / 2 + angle),
-            distance * Mathf.Sin(Mathf.PI / 2 + angle),
+        if (fishingState == FishingState.Reelable) {
+            Debug.Log($"Fish reeled by {reelStrength}, from {fishDistance} to {fishDistance - reelStrength}");
+            fishDistance -= reelStrength;
+            UpdateBobberLocation();
+            if (UnityEngine.Random.Range(0, 100) < hookedFish.fightOnReelChance)
+            {
+                StartFighting();
+            }
+            if (fishDistance < catchDistance)
+            {
+                fishingState = FishingState.Caught;
+            }
+        } else
+        {
+            if (fishingState != FishingState.Caught || fishingState != FishingState.NotFishing)
+            {
+                Debug.Log("You reeled at the wrong time!");
+                fishingState = FishingState.Failed;
+            }
+        }
+    }
+    
+    private void UpdateBobberLocation()
+    {
+        bobberLocation = new Vector3(
+            fishDistance * Mathf.Cos(Mathf.PI / 2 + fishAngle),
+            fishDistance * Mathf.Sin(Mathf.PI / 2 + fishAngle),
             0
         );
+        waterRipples.transform.localPosition = bobberLocation;
+        waterSplash.transform.localPosition = bobberLocation;
+    }
+
+    private void SetNextBobberLocation()
+    {
+        fishDistance = UnityEngine.Random.Range(bobberMinDistance, bobberMaxDistance);
+        fishAngle = Mathf.Deg2Rad * UnityEngine.Random.Range(-bobberMaxAngle, +bobberMaxAngle);
+        UpdateBobberLocation();
     }
 
     private void GameInput_OnInteractAction(object sender, EventArgs e)
@@ -81,7 +118,7 @@ public class PlayerFishing : MonoBehaviour
         if (IsFishingAllowed() && fishingState == FishingState.NotFishing)
         {
             castingTimer = 0;
-            bobberLocation = GetNextBobberLocation();
+            SetNextBobberLocation();
             // tell player animator to play casting animation
             fishingState = FishingState.Casting;
         }
@@ -91,6 +128,15 @@ public class PlayerFishing : MonoBehaviour
             waterRipples.SetActive(false);
             waterSplash.SetActive(false);
         }
+    }
+
+    private void StartFighting()
+    {
+        waterRipples.SetActive(false);
+        waterSplash.SetActive(true);
+        fishingState = FishingState.Fighting;
+        fightTimer = 0;
+        fightTime = UnityEngine.Random.Range(hookedFish.minFightTime, hookedFish.maxFightTime);
     }
 
     private void Update()
@@ -105,8 +151,8 @@ public class PlayerFishing : MonoBehaviour
                 {
                     waitingTime = UnityEngine.Random.Range(minWaitingTime, maxWaitingTime);
                     fishingState = FishingState.Waiting;
-                    waterRipples.transform.localPosition = bobberLocation;
-                    waterSplash.transform.localPosition = bobberLocation;
+                    // waterRipples.transform.localPosition = bobberLocation;
+                    // waterSplash.transform.localPosition = bobberLocation;
                     waterRipples.SetActive(true);
                 }
                 castingTimer += Time.deltaTime;
@@ -123,24 +169,32 @@ public class PlayerFishing : MonoBehaviour
                 if (hookingTimer > timeToHook)
                 {
                     hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length - 1)];
-                    waterRipples.SetActive(false);
-                    waterSplash.SetActive(true);
-                    fishingState = FishingState.Fighting;
-                    fightTimer = 0;
-                    fightTime = UnityEngine.Random.Range(hookedFish.minFightTime, hookedFish.maxFightTime);
+                    StartFighting();
                 }
                 hookingTimer += Time.deltaTime;
                 break;
             case FishingState.Fighting:
                 if (fightTimer > fightTime)
                 {
-                    fishingState = FishingState.Yankable;
+                    fishingState = FishingState.Reelable;
                     waterRipples.SetActive(true);
                     waterSplash.SetActive(false);
                 }
                 fightTimer += Time.deltaTime;
                 break;
-            case FishingState.Yankable:
+            case FishingState.Reelable:
+                break;
+            case FishingState.Caught:
+                waterRipples.SetActive(false);
+                waterSplash.SetActive(false);
+                Debug.Log($"You caught a {hookedFish.fishName}");
+                fishingState = FishingState.NotFishing;
+                break;
+            case FishingState.Failed:
+                waterRipples.SetActive(false);
+                waterSplash.SetActive(false);
+                fishingState = FishingState.NotFishing;
+                Debug.Log($"You failed to catch a fish");
                 break;
         }
     }

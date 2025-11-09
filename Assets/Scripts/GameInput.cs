@@ -8,6 +8,7 @@ public class GameInput : MonoBehaviour
 
     public InputSystem_Actions playerInputActions;
     public event EventHandler OnInteractAction;
+    public event EventHandler OnReelAction;
 
     private void Awake()
     {
@@ -16,12 +17,19 @@ public class GameInput : MonoBehaviour
         playerInputActions = new InputSystem_Actions();
         playerInputActions.Player.Enable();
         playerInputActions.Player.Interact.performed += Interact_performed;
+        playerInputActions.Player.Reel.performed += Reel_performed;
+    }
+
+    private void Reel_performed(InputAction.CallbackContext context)
+    {
+        OnReelAction?.Invoke(this, EventArgs.Empty);
     }
 
     private void OnDestroy()
     {
         playerInputActions.Dispose();
         playerInputActions.Player.Interact.performed -= Interact_performed;
+        playerInputActions.Player.Reel.performed -= Reel_performed;
     }
 
     public Vector2 GetMovementVectorNormalised()
@@ -32,7 +40,7 @@ public class GameInput : MonoBehaviour
 
     private void Interact_performed(InputAction.CallbackContext context)
     {
-        Debug.Log("Interact performed");
         OnInteractAction?.Invoke(this, EventArgs.Empty);
     }
+    
 }

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45a5a732f287fb44a4c67bb1d084a9a, type: 3}
   m_Name: Goldfish
   m_EditorClassIdentifier: Assembly-CSharp::FishSO
+  fishName: Goldfish
   minFightTime: 1
   maxFightTime: 4
-  yankDistance: 0.5
+  reelDistance: 0
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: -437355665260722552, guid: eceb793c0e6b62646ad10c000d4edcd9, type: 3}
