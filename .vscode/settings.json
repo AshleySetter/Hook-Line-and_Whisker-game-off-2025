@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Hook, Line _ Whisker.slnx"
+    "dotnet.defaultSolution": "HookLineAndWhisker.slnx"
 }

@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="nl.jeffreylanters.tweens.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>

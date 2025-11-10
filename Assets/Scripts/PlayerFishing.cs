@@ -1,4 +1,5 @@
 using System;
+using Tweens;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -41,7 +42,7 @@ public class PlayerFishing : MonoBehaviour
         Caught,
         Failed
     }
-    
+
     public bool IsFishingAllowed()
     {
         // only allow when next to and facing water
@@ -72,7 +73,8 @@ public class PlayerFishing : MonoBehaviour
 
     private void GameInput_OnReelAction(object sender, EventArgs e)
     {
-        if (fishingState == FishingState.Reelable) {
+        if (fishingState == FishingState.Reelable)
+        {
             Debug.Log($"Fish reeled by {reelStrength}, from {fishDistance} to {fishDistance - reelStrength}");
             fishDistance -= reelStrength;
             UpdateBobberLocation();
@@ -84,7 +86,8 @@ public class PlayerFishing : MonoBehaviour
             {
                 fishingState = FishingState.Caught;
             }
-        } else
+        }
+        else
         {
             if (fishingState != FishingState.Caught || fishingState != FishingState.NotFishing)
             {
@@ -93,7 +96,7 @@ public class PlayerFishing : MonoBehaviour
             }
         }
     }
-    
+
     private void UpdateBobberLocation()
     {
         bobberLocation = new Vector3(
@@ -101,8 +104,31 @@ public class PlayerFishing : MonoBehaviour
             fishDistance * Mathf.Sin(Mathf.PI / 2 + fishAngle),
             0
         );
-        waterRipples.transform.localPosition = bobberLocation;
-        waterSplash.transform.localPosition = bobberLocation;
+        if (waterRipples.activeSelf)
+        {
+            var tween = new LocalPositionTween
+            {
+                to = bobberLocation,
+                duration = 1,
+            };
+            waterRipples.gameObject.AddTween(tween);
+        }
+        else
+        {
+            waterRipples.transform.localPosition = bobberLocation;
+        }
+        if (waterSplash.activeSelf)
+        {
+            var tween = new LocalPositionTween
+            {
+                to = bobberLocation,
+                duration = 1,
+            };
+            waterSplash.gameObject.AddTween(tween);
+        } else
+        {
+            waterSplash.transform.localPosition = bobberLocation;
+        }
     }
 
     private void SetNextBobberLocation()
