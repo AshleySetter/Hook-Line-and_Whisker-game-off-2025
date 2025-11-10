@@ -2,6 +2,7 @@ using System;
 using Tweens;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerFishing : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private GameObject waterRipples;
     [SerializeField] private GameObject waterSplash;
     [SerializeField] private FishSO[] fishes;
+    [SerializeField] private Tilemap groundTileMap;
+    [SerializeField] private TileBase waterTileBase;
 
     private FishingState fishingState;
     private float timeToCast = 0.5f; // length of cast animation
@@ -44,11 +47,19 @@ public class PlayerFishing : MonoBehaviour
         Failed
     }
 
+    public bool IsFacingWater()
+    {
+        Vector3 inFrontOfPlayer = this.transform.position + PlayerMovement.Instance.GetFacingVector();
+        Vector3Int tileMapCell = groundTileMap.WorldToCell(inFrontOfPlayer);
+        TileBase tileInFrontOfPlayer = groundTileMap.GetTile(tileMapCell);
+        return tileInFrontOfPlayer == waterTileBase;
+    }
+
     public bool IsFishingAllowed()
     {
+        return IsFacingWater();
         // only allow when next to and facing water
         // and when during the fishing part of the day
-        return true;
     }
 
     public bool GetIsFishing()
@@ -115,11 +126,9 @@ public class PlayerFishing : MonoBehaviour
 
     private void UpdateBobberLocation()
     {
-        bobberLocation = new Vector3(
-            fishDistance * Mathf.Cos(Mathf.PI / 2 + fishAngle),
-            fishDistance * Mathf.Sin(Mathf.PI / 2 + fishAngle),
-            0
-        );
+        Vector3 facingVector = PlayerMovement.Instance.GetFacingVector();
+        Vector3 offset = fishDistance * facingVector;
+        Vector3 bobberLocation = Quaternion.Euler(0f, 0f, fishAngle) * offset;
         if (waterRipples.activeSelf)
         {
             var tween = new LocalPositionTween
@@ -150,7 +159,7 @@ public class PlayerFishing : MonoBehaviour
     private void SetNextBobberLocation()
     {
         fishDistance = UnityEngine.Random.Range(bobberMinDistance, bobberMaxDistance);
-        fishAngle = Mathf.Deg2Rad * UnityEngine.Random.Range(-bobberMaxAngle, +bobberMaxAngle);
+        fishAngle = UnityEngine.Random.Range(-bobberMaxAngle, +bobberMaxAngle);
         UpdateBobberLocation();
     }
 
