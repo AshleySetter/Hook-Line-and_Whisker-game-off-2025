@@ -77,6 +77,6 @@ public class PlayerMovement : MonoBehaviour
     private void FlipPlayer()
     {
         facingRight = !facingRight;
-        visual.transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        visual.transform.localScale = new Vector3(visual.transform.localScale.x * -1, visual.transform.localScale.y, visual.transform.localScale.z);
     }
 }
