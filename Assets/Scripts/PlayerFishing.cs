@@ -10,6 +10,7 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private GameObject waterRipples;
     [SerializeField] private GameObject waterSplash;
     [SerializeField] private FishSO[] fishes;
+
     private FishingState fishingState;
     private float timeToCast = 0.5f; // length of cast animation
     private float castingTimer;
@@ -69,22 +70,37 @@ public class PlayerFishing : MonoBehaviour
         SetNextBobberLocation();
         waterRipples.SetActive(false);
         waterSplash.SetActive(false);
+        CatchBar.Instance.gameObject.SetActive(false);
     }
 
     private void GameInput_OnReelAction(object sender, EventArgs e)
     {
         if (fishingState == FishingState.Reelable)
         {
-            Debug.Log($"Fish reeled by {reelStrength}, from {fishDistance} to {fishDistance - reelStrength}");
-            fishDistance -= reelStrength;
-            UpdateBobberLocation();
-            if (UnityEngine.Random.Range(0, 100) < hookedFish.fightOnReelChance)
+            if (CatchBar.Instance.GetCatchBarInGreen())
             {
-                StartFighting();
-            }
-            if (fishDistance < catchDistance)
+                if (CatchBar.Instance.GetCatchBarInBoost())
+                {
+                    Debug.Log("Fish Boost reeled!");
+                    fishDistance -= reelStrength * 2;
+                } else
+                {
+                    Debug.Log($"Fish reeled");
+                    fishDistance -= reelStrength;
+                }
+                fishDistance -= reelStrength;
+                UpdateBobberLocation();
+                if (UnityEngine.Random.Range(0, 100) < hookedFish.fightOnReelChance)
+                {
+                    StartFighting();
+                }
+                if (fishDistance < catchDistance)
+                {
+                    fishingState = FishingState.Caught;
+                }
+            } else
             {
-                fishingState = FishingState.Caught;
+                fishingState = FishingState.Failed;
             }
         }
         else
@@ -163,6 +179,7 @@ public class PlayerFishing : MonoBehaviour
         fishingState = FishingState.Fighting;
         fightTimer = 0;
         fightTime = UnityEngine.Random.Range(hookedFish.minFightTime, hookedFish.maxFightTime);
+        CatchBar.Instance.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -205,6 +222,7 @@ public class PlayerFishing : MonoBehaviour
                     fishingState = FishingState.Reelable;
                     waterRipples.SetActive(true);
                     waterSplash.SetActive(false);
+                    CatchBar.Instance.gameObject.SetActive(true);
                 }
                 fightTimer += Time.deltaTime;
                 break;
@@ -213,6 +231,7 @@ public class PlayerFishing : MonoBehaviour
             case FishingState.Caught:
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
+                CatchBar.Instance.gameObject.SetActive(false);
                 Debug.Log($"You caught a {hookedFish.fishName}");
                 CatchDisplay.Instance.SetCaughtFish(hookedFish);
                 CatchDisplay.Instance.SetActive();
@@ -221,6 +240,7 @@ public class PlayerFishing : MonoBehaviour
             case FishingState.Failed:
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
+                CatchBar.Instance.gameObject.SetActive(false);
                 fishingState = FishingState.NotFishing;
                 Debug.Log($"You failed to catch a fish");
                 break;
