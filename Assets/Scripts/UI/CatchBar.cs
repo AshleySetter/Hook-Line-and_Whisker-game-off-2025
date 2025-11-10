@@ -26,12 +26,12 @@ public class CatchBar : MonoBehaviour
     {
         FloatTween reelTween = new FloatTween
         {
-            duration = 1f,
+            duration = 3f,
             usePingPong = true,
             pingPongInterval = 0f,
             repeatInterval = 0f,
             isInfinite = true,
-            // easeType = EaseType.QuadInOut,
+            easeType = EaseType.QuintInOut,
             from = -1,
             to = 1,
             onUpdate = (_, value) => {
@@ -40,18 +40,6 @@ public class CatchBar : MonoBehaviour
                     value * maxReelMarkerMovement,
                     ReelMarker.transform.localPosition.y,
                     ReelMarker.transform.localPosition.z);
-            },
-            // onUpdate = (instance, value) =>
-            // {
-            //     Debug.Log("Tween has updated");
-            // },
-            onEnd = (instance) =>
-            {
-                Debug.Log("Tween has ended");
-            },
-            onFinally = (instance) =>
-            {
-                Debug.Log("Tween has ended or has been cancelled");
             },
         };
         tweenInstance = ReelMarker.gameObject.AddTween(reelTween);
