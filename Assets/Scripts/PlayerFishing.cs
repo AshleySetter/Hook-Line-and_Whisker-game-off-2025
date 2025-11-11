@@ -13,9 +13,10 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private FishSO[] fishes;
     [SerializeField] private Tilemap groundTileMap;
     [SerializeField] private TileBase waterTileBase;
+    [SerializeField] private Animator animator;
 
     private FishingState fishingState;
-    private float timeToCast = 0.5f; // length of cast animation
+    private float timeToCast = 1f; // length of cast animation
     private float castingTimer;
     private float timeToHook = 0.5f; // length of hooking fish animation
     private float hookingTimer;
@@ -77,6 +78,7 @@ public class PlayerFishing : MonoBehaviour
         GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
         GameInput.Instance.OnReelAction += GameInput_OnReelAction;
         fishingState = FishingState.NotFishing;
+        animator.SetBool("IsFishing", false);
         castingTimer = 0;
         SetNextBobberLocation();
         waterRipples.SetActive(false);
@@ -86,6 +88,10 @@ public class PlayerFishing : MonoBehaviour
 
     private void GameInput_OnReelAction(object sender, EventArgs e)
     {
+        if (fishingState != FishingState.NotFishing)
+        {
+            animator.SetTrigger("DidReel");
+        }
         if (fishingState == FishingState.Reelable)
         {
             if (CatchBar.Instance.GetCatchBarInGreen())
@@ -170,11 +176,12 @@ public class PlayerFishing : MonoBehaviour
         {
             castingTimer = 0;
             SetNextBobberLocation();
-            // tell player animator to play casting animation
+            animator.SetBool("IsFishing", true);
             fishingState = FishingState.Casting;
         }
         else if (fishingState != FishingState.NotFishing)
         {
+            animator.SetBool("IsFishing", false);
             fishingState = FishingState.NotFishing;
             waterRipples.SetActive(false);
             waterSplash.SetActive(false);
@@ -245,12 +252,14 @@ public class PlayerFishing : MonoBehaviour
                 CatchDisplay.Instance.SetCaughtFish(hookedFish);
                 CatchDisplay.Instance.SetActive();
                 fishingState = FishingState.NotFishing;
+                animator.SetBool("IsFishing", false);
                 break;
             case FishingState.Failed:
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
                 CatchBar.Instance.gameObject.SetActive(false);
                 fishingState = FishingState.NotFishing;
+                animator.SetBool("IsFishing", false);
                 Debug.Log($"You failed to catch a fish");
                 break;
         }
