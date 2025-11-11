@@ -10,6 +10,7 @@ public class PlayerFishing : MonoBehaviour
 
     [SerializeField] private GameObject waterRipples;
     [SerializeField] private GameObject waterSplash;
+    [SerializeField] private GameObject fishShadow;
     [SerializeField] private FishSO[] fishes;
     [SerializeField] private Tilemap groundTileMap;
     [SerializeField] private TileBase waterTileBase;
@@ -35,6 +36,7 @@ public class PlayerFishing : MonoBehaviour
     private float fishDistance;
     private float reelStrength = 0.5f;
     private float catchDistance = 1f;
+    private BobberState bobberState;
 
     public enum FishingState
     {
@@ -46,6 +48,43 @@ public class PlayerFishing : MonoBehaviour
         Reelable,
         Caught,
         Failed
+    }
+
+    public enum BobberState
+    {
+        Fighting,
+        Waiting,
+        Reelable,
+        NotVisible
+    }
+
+    private void SetBobberState(BobberState bobberState)
+    {
+        this.bobberState = bobberState;
+        switch (bobberState)
+        {
+            case BobberState.NotVisible:
+                waterRipples.SetActive(false);
+                waterSplash.SetActive(false);
+                fishShadow.SetActive(false);
+                break;
+            case BobberState.Fighting:
+                waterRipples.SetActive(false);
+                waterSplash.SetActive(true);
+                fishShadow.SetActive(false);
+                break;
+            case BobberState.Reelable:
+                waterRipples.SetActive(false);
+                waterSplash.SetActive(false);
+                fishShadow.SetActive(true);
+                break;
+            case BobberState.Waiting:
+                waterRipples.SetActive(true);
+                waterSplash.SetActive(false);
+                fishShadow.SetActive(false);
+                break;
+        }
+
     }
 
     public bool IsFacingWater()
@@ -81,8 +120,7 @@ public class PlayerFishing : MonoBehaviour
         animator.SetBool("IsFishing", false);
         castingTimer = 0;
         SetNextBobberLocation();
-        waterRipples.SetActive(false);
-        waterSplash.SetActive(false);
+        SetBobberState(BobberState.NotVisible);
         CatchBar.Instance.gameObject.SetActive(false);
     }
 
@@ -109,11 +147,23 @@ public class PlayerFishing : MonoBehaviour
                 UpdateBobberLocation();
                 if (UnityEngine.Random.Range(0, 100) < hookedFish.fightOnReelChance)
                 {
-                    StartFighting();
+                    StartCoroutine(DoAfterDelayUtility.DoAfterDelay(1f, () =>
+                    {
+                        if (fishingState == FishingState.Reelable)
+                        {
+                            StartFighting();
+                        }
+                    }));
                 }
                 if (fishDistance < catchDistance)
                 {
-                    fishingState = FishingState.Caught;
+                    StartCoroutine(DoAfterDelayUtility.DoAfterDelay(1f, () =>
+                    {
+                        if (fishingState == FishingState.Reelable)
+                        {
+                            fishingState = FishingState.Caught;
+                        }
+                    }));
                 }
             } else
             {
@@ -135,30 +185,22 @@ public class PlayerFishing : MonoBehaviour
         Vector3 facingVector = PlayerMovement.Instance.GetFacingVector();
         Vector3 offset = fishDistance * facingVector;
         Vector3 bobberLocation = Quaternion.Euler(0f, 0f, fishAngle) * offset;
-        if (waterRipples.activeSelf)
+        GameObject[] bobberSprites = new GameObject[] { waterRipples, waterSplash, fishShadow };
+        foreach (var sprite in bobberSprites)
         {
-            var tween = new LocalPositionTween
+            if (sprite.activeSelf)
             {
-                to = bobberLocation,
-                duration = 1,
-            };
-            waterRipples.gameObject.AddTween(tween);
-        }
-        else
-        {
-            waterRipples.transform.localPosition = bobberLocation;
-        }
-        if (waterSplash.activeSelf)
-        {
-            var tween = new LocalPositionTween
+                var tween = new LocalPositionTween
+                {
+                    to = bobberLocation,
+                    duration = 1,
+                };
+                sprite.gameObject.AddTween(tween);
+            }
+            else
             {
-                to = bobberLocation,
-                duration = 1,
-            };
-            waterSplash.gameObject.AddTween(tween);
-        } else
-        {
-            waterSplash.transform.localPosition = bobberLocation;
+                sprite.transform.localPosition = bobberLocation;
+            }
         }
     }
 
@@ -183,15 +225,13 @@ public class PlayerFishing : MonoBehaviour
         {
             animator.SetBool("IsFishing", false);
             fishingState = FishingState.NotFishing;
-            waterRipples.SetActive(false);
-            waterSplash.SetActive(false);
+            SetBobberState(BobberState.NotVisible);
         }
     }
 
     private void StartFighting()
     {
-        waterRipples.SetActive(false);
-        waterSplash.SetActive(true);
+        SetBobberState(BobberState.Fighting);
         fishingState = FishingState.Fighting;
         fightTimer = 0;
         fightTime = UnityEngine.Random.Range(hookedFish.minFightTime, hookedFish.maxFightTime);
@@ -210,9 +250,7 @@ public class PlayerFishing : MonoBehaviour
                 {
                     waitingTime = UnityEngine.Random.Range(minWaitingTime, maxWaitingTime);
                     fishingState = FishingState.Waiting;
-                    // waterRipples.transform.localPosition = bobberLocation;
-                    // waterSplash.transform.localPosition = bobberLocation;
-                    waterRipples.SetActive(true);
+                    SetBobberState(BobberState.Waiting);
                 }
                 castingTimer += Time.deltaTime;
                 break;
@@ -236,8 +274,7 @@ public class PlayerFishing : MonoBehaviour
                 if (fightTimer > fightTime)
                 {
                     fishingState = FishingState.Reelable;
-                    waterRipples.SetActive(true);
-                    waterSplash.SetActive(false);
+                    SetBobberState(BobberState.Reelable);
                     CatchBar.Instance.gameObject.SetActive(true);
                 }
                 fightTimer += Time.deltaTime;
@@ -245,8 +282,7 @@ public class PlayerFishing : MonoBehaviour
             case FishingState.Reelable:
                 break;
             case FishingState.Caught:
-                waterRipples.SetActive(false);
-                waterSplash.SetActive(false);
+                SetBobberState(BobberState.NotVisible);
                 CatchBar.Instance.gameObject.SetActive(false);
                 Debug.Log($"You caught a {hookedFish.fishName}");
                 CatchDisplay.Instance.SetCaughtFish(hookedFish);
@@ -255,8 +291,7 @@ public class PlayerFishing : MonoBehaviour
                 animator.SetBool("IsFishing", false);
                 break;
             case FishingState.Failed:
-                waterRipples.SetActive(false);
-                waterSplash.SetActive(false);
+                SetBobberState(BobberState.NotVisible);
                 CatchBar.Instance.gameObject.SetActive(false);
                 fishingState = FishingState.NotFishing;
                 animator.SetBool("IsFishing", false);
