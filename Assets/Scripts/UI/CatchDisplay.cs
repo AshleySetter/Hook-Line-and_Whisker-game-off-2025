@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ public class CatchDisplay : MonoBehaviour
     private FishSO caughtFish;
     [SerializeField] private Button closeButton;
     [SerializeField] private GameObject catchDisplay;
+    [SerializeField] private Image fishImage;
+    [SerializeField] private TextMeshProUGUI caughtFishNameText;
 
     private void Awake()
     {
@@ -26,6 +29,8 @@ public class CatchDisplay : MonoBehaviour
     public void SetCaughtFish(FishSO fishSO)
     {
         caughtFish = fishSO;
+        fishImage.sprite = caughtFish.fishSprite;
+        caughtFishNameText.text = caughtFish.fishName;
     }
 
     public void SetActive()

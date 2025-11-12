@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 8468fd40512355b408e962a75d99a5e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 597829953061344658
+    second: All Fish x1000 Outlined_0
+  - first:
+      213: -5653629045968529998
+    second: All Fish x1000 Outlined_1
+  - first:
+      213: 4809346211245319759
+    second: All Fish x1000 Outlined_2
+  - first:
+      213: 8774877744728505875
+    second: All Fish x1000 Outlined_3
+  - first:
+      213: 2772015190507319658
+    second: All Fish x1000 Outlined_4
+  - first:
+      213: -6662755149598763091
+    second: All Fish x1000 Outlined_5
+  - first:
+      213: 8782025025696733255
+    second: All Fish x1000 Outlined_6
+  - first:
+      213: -5520407738161749365
+    second: All Fish x1000 Outlined_7
+  - first:
+      213: 6409024353784802201
+    second: All Fish x1000 Outlined_8
+  - first:
+      213: -5521391145060989217
+    second: All Fish x1000 Outlined_9
+  - first:
+      213: -4204125565751268665
+    second: All Fish x1000 Outlined_10
+  - first:
+      213: -3179562372773881935
+    second: All Fish x1000 Outlined_11
+  - first:
+      213: -8495086573794227811
+    second: All Fish x1000 Outlined_12
+  - first:
+      213: 6619137543096773509
+    second: All Fish x1000 Outlined_13
+  - first:
+      213: 8751943901057738884
+    second: All Fish x1000 Outlined_14
+  - first:
+      213: 7213003139256037751
+    second: All Fish x1000 Outlined_15
+  - first:
+      213: -4268959613968352172
+    second: All Fish x1000 Outlined_16
+  - first:
+      213: -8944823489639624163
+    second: All Fish x1000 Outlined_17
+  - first:
+      213: 3141251353483698018
+    second: All Fish x1000 Outlined_18
+  - first:
+      213: 4820240634939863478
+    second: All Fish x1000 Outlined_19
+  - first:
+      213: -8171020705360386494
+    second: All Fish x1000 Outlined_20
+  - first:
+      213: -2494387428545755669
+    second: All Fish x1000 Outlined_21
+  - first:
+      213: -4673338929855285186
+    second: All Fish x1000 Outlined_22
+  - first:
+      213: 1814969131154297684
+    second: All Fish x1000 Outlined_23
+  - first:
+      213: -2710259862410083368
+    second: All Fish x1000 Outlined_24
+  - first:
+      213: -3717289804037925465
+    second: All Fish x1000 Outlined_25
+  - first:
+      213: 943966840372704269
+    second: All Fish x1000 Outlined_26
+  - first:
+      213: 7334749605700391848
+    second: All Fish x1000 Outlined_27
+  - first:
+      213: 8648925537077130378
+    second: All Fish x1000 Outlined_28
+  - first:
+      213: -4985871734008292512
+    second: All Fish x1000 Outlined_29
+  - first:
+      213: -3768641030862021900
+    second: All Fish x1000 Outlined_30
+  - first:
+      213: -5638439838850883800
+    second: All Fish x1000 Outlined_31
+  - first:
+      213: 8362804028838682961
+    second: All Fish x1000 Outlined_32
+  - first:
+      213: -4055028852808576978
+    second: All Fish x1000 Outlined_33
+  - first:
+      213: 7129738304226382862
+    second: All Fish x1000 Outlined_34
+  - first:
+      213: -4432591573986274172
+    second: All Fish x1000 Outlined_35
+  - first:
+      213: 8559297142299754621
+    second: All Fish x1000 Outlined_36
+  - first:
+      213: -2691034996533734883
+    second: All Fish x1000 Outlined_37
+  - first:
+      213: 3768876598302471429
+    second: All Fish x1000 Outlined_38
+  - first:
+      213: 7300947744046324470
+    second: All Fish x1000 Outlined_39
+  - first:
+      213: -7958120711446393341
+    second: All Fish x1000 Outlined_40
+  - first:
+      213: -3774372711702623391
+    second: All Fish x1000 Outlined_41
+  - first:
+      213: 7192512515518492975
+    second: All Fish x1000 Outlined_42
+  - first:
+      213: 3656668421249046575
+    second: All Fish x1000 Outlined_43
+  - first:
+      213: -901741216995435203
+    second: All Fish x1000 Outlined_44
+  - first:
+      213: 147293249807185344
+    second: All Fish x1000 Outlined_45
+  - first:
+      213: 2820713285659624689
+    second: All Fish x1000 Outlined_46
+  - first:
+      213: 6004077268671686006
+    second: All Fish x1000 Outlined_47
+  - first:
+      213: 8272147149063213161
+    second: All Fish x1000 Outlined_48
+  - first:
+      213: -4772710798397614151
+    second: All Fish x1000 Outlined_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1449
+        width: 181
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2955f44cc2beb4800800000000000000
+      internalID: 597829953061344658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1449
+        width: 182
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5173f36564a81b0800000000000000
+      internalID: -5653629045968529998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1469
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46e52be5ea3eb240800000000000000
+      internalID: 4809346211245319759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_3
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1439
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ef50a41d0a6c970800000000000000
+      internalID: 8774877744728505875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_4
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1439
+        width: 142
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61fc26012d287620800000000000000
+      internalID: 2772015190507319658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1119
+        width: 142
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7d2c20e732983a0800000000000000
+      internalID: -6662755149598763091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1299
+        width: 182
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7489e315b3500e970800000000000000
+      internalID: 8782025025696733255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_7
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1289
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b822d8719629363b0800000000000000
+      internalID: -5520407738161749365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_8
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1119
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bab2c71bd61f850800000000000000
+      internalID: 6409024353784802201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1279
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd607a4d1041063b0800000000000000
+      internalID: -5521391145060989217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_10
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1279
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cae1468212f7a5c0800000000000000
+      internalID: -4204125565751268665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_11
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1279
+        width: 181
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b75d953edcefd3d0800000000000000
+      internalID: -3179562372773881935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1129
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d990ec025c36b1a80800000000000000
+      internalID: -8495086573794227811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_13
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1119
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b2cb79686ebdb50800000000000000
+      internalID: 6619137543096773509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_14
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1149
+        width: 182
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48861b4bb96257970800000000000000
+      internalID: 8751943901057738884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 181
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7713227932cb91460800000000000000
+      internalID: 7213003139256037751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 969
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c7de859db91c4c0800000000000000
+      internalID: -4268959613968352172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_17
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 809
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12d5798d6a9dd380800000000000000
+      internalID: -8944823489639624163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_18
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 959
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f5c928677f79b20800000000000000
+      internalID: 3141251353483698018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_19
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 959
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b17e79915fe4e240800000000000000
+      internalID: 4820240634939863478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_20
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 799
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246e1acd5f3ba9e80800000000000000
+      internalID: -8171020705360386494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_21
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 959
+        width: 172
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5845d79d7226dd0800000000000000
+      internalID: -2494387428545755669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_22
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 799
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38b8f2f007f42fb0800000000000000
+      internalID: -4673338929855285186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_23
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 959
+        width: 172
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45350c40fc0103910800000000000000
+      internalID: 1814969131154297684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_24
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 839
+        width: 182
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d34c04c309336ad0800000000000000
+      internalID: -2710259862410083368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 479
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a553274e98896cc0800000000000000
+      internalID: -3717289804037925465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_26
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 639
+        width: 182
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04b92807d4a91d00800000000000000
+      internalID: 943966840372704269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_27
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 479
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3553cb7e34ac560800000000000000
+      internalID: 7334749605700391848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_28
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 639
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a847946b3f7270870800000000000000
+      internalID: 8648925537077130378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_29
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 479
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b56cef210aecab0800000000000000
+      internalID: -4985871734008292512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_30
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 639
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fad18513f813bbc0800000000000000
+      internalID: -3768641030862021900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_31
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 489
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fd1ed17dc30c1b0800000000000000
+      internalID: -5638439838850883800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_32
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 639
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151a229c4f5ae0470800000000000000
+      internalID: 8362804028838682961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_33
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 479
+        width: 162
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20926a2eb4a9b7c0800000000000000
+      internalID: -4055028852808576978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_34
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 639
+        width: 181
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04d8e4763be1f260800000000000000
+      internalID: 7129738304226382862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 359
+        width: 182
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4849826c2754c72c0800000000000000
+      internalID: -4432591573986274172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_36
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 339
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d700bcdd66bb8c670800000000000000
+      internalID: 8559297142299754621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_37
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 339
+        width: 182
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d125679ade587aad0800000000000000
+      internalID: -2691034996533734883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_38
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 339
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505f91c3c4dbd4430800000000000000
+      internalID: 3768876598302471429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_39
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 349
+        width: 181
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa12978a4d225560800000000000000
+      internalID: 7300947744046324470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 181
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e0f8a70631f8190800000000000000
+      internalID: -7958120711446393341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_41
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 189
+        width: 182
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b8905240cbe9bc0800000000000000
+      internalID: -3774372711702623391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_42
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 169
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21f70a7600f0d360800000000000000
+      internalID: 7192512515518492975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_43
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 169
+        width: 182
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2810f52e881fb230800000000000000
+      internalID: 3656668421249046575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_44
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 179
+        width: 182
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d98a9042f5c73f0800000000000000
+      internalID: -901741216995435203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_45
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 29
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5f1982e6a4b0200800000000000000
+      internalID: 147293249807185344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_46
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 19
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f487fcd9cf252720800000000000000
+      internalID: 2820713285659624689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_47
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 0
+        width: 182
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6756c230774c25350800000000000000
+      internalID: 6004077268671686006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_48
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 19
+        width: 182
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9605cad11029cc270800000000000000
+      internalID: 8272147149063213161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish x1000 Outlined_49
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 0
+        width: 181
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7d6d5d0dce3cdb0800000000000000
+      internalID: -4772710798397614151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      All Fish x1000 Outlined_0: 597829953061344658
+      All Fish x1000 Outlined_1: -5653629045968529998
+      All Fish x1000 Outlined_10: -4204125565751268665
+      All Fish x1000 Outlined_11: -3179562372773881935
+      All Fish x1000 Outlined_12: -8495086573794227811
+      All Fish x1000 Outlined_13: 6619137543096773509
+      All Fish x1000 Outlined_14: 8751943901057738884
+      All Fish x1000 Outlined_15: 7213003139256037751
+      All Fish x1000 Outlined_16: -4268959613968352172
+      All Fish x1000 Outlined_17: -8944823489639624163
+      All Fish x1000 Outlined_18: 3141251353483698018
+      All Fish x1000 Outlined_19: 4820240634939863478
+      All Fish x1000 Outlined_2: 4809346211245319759
+      All Fish x1000 Outlined_20: -8171020705360386494
+      All Fish x1000 Outlined_21: -2494387428545755669
+      All Fish x1000 Outlined_22: -4673338929855285186
+      All Fish x1000 Outlined_23: 1814969131154297684
+      All Fish x1000 Outlined_24: -2710259862410083368
+      All Fish x1000 Outlined_25: -3717289804037925465
+      All Fish x1000 Outlined_26: 943966840372704269
+      All Fish x1000 Outlined_27: 7334749605700391848
+      All Fish x1000 Outlined_28: 8648925537077130378
+      All Fish x1000 Outlined_29: -4985871734008292512
+      All Fish x1000 Outlined_3: 8774877744728505875
+      All Fish x1000 Outlined_30: -3768641030862021900
+      All Fish x1000 Outlined_31: -5638439838850883800
+      All Fish x1000 Outlined_32: 8362804028838682961
+      All Fish x1000 Outlined_33: -4055028852808576978
+      All Fish x1000 Outlined_34: 7129738304226382862
+      All Fish x1000 Outlined_35: -4432591573986274172
+      All Fish x1000 Outlined_36: 8559297142299754621
+      All Fish x1000 Outlined_37: -2691034996533734883
+      All Fish x1000 Outlined_38: 3768876598302471429
+      All Fish x1000 Outlined_39: 7300947744046324470
+      All Fish x1000 Outlined_4: 2772015190507319658
+      All Fish x1000 Outlined_40: -7958120711446393341
+      All Fish x1000 Outlined_41: -3774372711702623391
+      All Fish x1000 Outlined_42: 7192512515518492975
+      All Fish x1000 Outlined_43: 3656668421249046575
+      All Fish x1000 Outlined_44: -901741216995435203
+      All Fish x1000 Outlined_45: 147293249807185344
+      All Fish x1000 Outlined_46: 2820713285659624689
+      All Fish x1000 Outlined_47: 6004077268671686006
+      All Fish x1000 Outlined_48: 8272147149063213161
+      All Fish x1000 Outlined_49: -4772710798397614151
+      All Fish x1000 Outlined_5: -6662755149598763091
+      All Fish x1000 Outlined_6: 8782025025696733255
+      All Fish x1000 Outlined_7: -5520407738161749365
+      All Fish x1000 Outlined_8: 6409024353784802201
+      All Fish x1000 Outlined_9: -5521391145060989217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

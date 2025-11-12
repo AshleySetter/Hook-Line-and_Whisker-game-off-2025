@@ -34,7 +34,7 @@ public class PlayerFishing : MonoBehaviour
     private FishSO hookedFish;
     private float fishAngle;
     private float fishDistance;
-    private float reelStrength = 0.5f;
+    private float reelDistance => hookedFish.reelDistance;
     private float catchDistance = 1f;
     private BobberState bobberState;
 
@@ -137,13 +137,13 @@ public class PlayerFishing : MonoBehaviour
                 if (CatchBar.Instance.GetCatchBarInBoost())
                 {
                     Debug.Log("Fish Boost reeled!");
-                    fishDistance -= reelStrength * 2;
+                    fishDistance -= reelDistance * 2;
                 } else
                 {
                     Debug.Log($"Fish reeled");
-                    fishDistance -= reelStrength;
+                    fishDistance -= reelDistance;
                 }
-                fishDistance -= reelStrength;
+                fishDistance -= reelDistance;
                 UpdateBobberLocation();
                 if (UnityEngine.Random.Range(0, 100) < hookedFish.fightOnReelChance)
                 {
@@ -157,7 +157,7 @@ public class PlayerFishing : MonoBehaviour
                 }
                 if (fishDistance < catchDistance)
                 {
-                    StartCoroutine(DoAfterDelayUtility.DoAfterDelay(1f, () =>
+                    StartCoroutine(DoAfterDelayUtility.DoAfterDelay(0.5f, () =>
                     {
                         if (fishingState == FishingState.Reelable)
                         {
@@ -266,6 +266,8 @@ public class PlayerFishing : MonoBehaviour
                 if (hookingTimer > timeToHook)
                 {
                     hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length - 1)];
+                    CatchBar.Instance.SetTween(hookedFish.reelTweenDuration, hookedFish.reelTweenEaseType);
+                    CatchBar.Instance.SetReelPercentage(hookedFish.reelPercentageGreen);
                     StartFighting();
                 }
                 hookingTimer += Time.deltaTime;

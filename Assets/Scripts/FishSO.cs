@@ -1,4 +1,5 @@
 using UnityEngine;
+using Tweens;
 
 [CreateAssetMenu(fileName = "FishSO", menuName = "Scriptable Objects/FishSO")]
 public class FishSO : ScriptableObject
@@ -10,4 +11,7 @@ public class FishSO : ScriptableObject
     public float fightOnReelChance; // chance that it begins fighting again on a reel action
     public float fishWeight; // unit of weight for fish - used to determine how many cats it feeds and value when sold
     public Sprite fishSprite;
+    public float reelTweenDuration;
+    public EaseType reelTweenEaseType;
+    public float reelPercentageGreen;
 }

@@ -15,7 +15,10 @@ MonoBehaviour:
   fishName: Goldfish
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0
+  reelDistance: 0.5
   fightOnReelChance: 20
   fishWeight: 1
-  fishSprite: {fileID: -437355665260722552, guid: eceb793c0e6b62646ad10c000d4edcd9, type: 3}
+  fishSprite: {fileID: -437355665260722552, guid: b9fb9e382a97b734c85d2c1c83e8c3ea, type: 3}
+  reelTweenDuration: 5
+  reelTweenEaseType: 52
+  reelPercentageGreen: 20

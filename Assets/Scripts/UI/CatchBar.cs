@@ -16,6 +16,7 @@ public class CatchBar : MonoBehaviour
     private TweenInstance tweenInstance;
     private float reelPercentage;
     private float boostPercentage = 5f;
+    private FloatTween reelTween;
 
     private void Awake()
     {
@@ -24,17 +25,27 @@ public class CatchBar : MonoBehaviour
 
     private void Start()
     {
-        FloatTween reelTween = new FloatTween
+        SetTween(3f, EaseType.QuintInOut);
+    }
+    
+    public void SetTween(float duration, EaseType easeType)
+    {
+        if (tweenInstance != null)
         {
-            duration = 3f,
+            tweenInstance.Cancel();
+        }
+        reelTween = new FloatTween
+        {
+            duration = duration,
             usePingPong = true,
             pingPongInterval = 0f,
             repeatInterval = 0f,
             isInfinite = true,
-            easeType = EaseType.QuintInOut,
+            easeType = easeType,
             from = -1,
             to = 1,
-            onUpdate = (_, value) => {
+            onUpdate = (_, value) =>
+            {
                 reelValue = value;
                 ReelMarker.transform.localPosition = new Vector3(
                     value * maxReelMarkerMovement,

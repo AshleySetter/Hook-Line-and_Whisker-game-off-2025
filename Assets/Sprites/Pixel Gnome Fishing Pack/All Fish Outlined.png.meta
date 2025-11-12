@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 3d1d266697143d04f9801fb7eed36ef4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3820581799685349873
+    second: All Fish Outlined_0
+  - first:
+      213: 5840241004737981925
+    second: All Fish Outlined_1
+  - first:
+      213: -3413147012532769543
+    second: All Fish Outlined_2
+  - first:
+      213: -3589310473914420161
+    second: All Fish Outlined_3
+  - first:
+      213: -7792395373375335917
+    second: All Fish Outlined_4
+  - first:
+      213: 6559116753774082145
+    second: All Fish Outlined_5
+  - first:
+      213: -1154708175869393917
+    second: All Fish Outlined_6
+  - first:
+      213: 7265569241980098307
+    second: All Fish Outlined_7
+  - first:
+      213: -7352284194107813014
+    second: All Fish Outlined_8
+  - first:
+      213: 1518346277392611494
+    second: All Fish Outlined_9
+  - first:
+      213: 6148847707341348193
+    second: All Fish Outlined_10
+  - first:
+      213: 4916726810206516101
+    second: All Fish Outlined_11
+  - first:
+      213: 752549830458156763
+    second: All Fish Outlined_12
+  - first:
+      213: -5405652394379992116
+    second: All Fish Outlined_13
+  - first:
+      213: 3873334891317305129
+    second: All Fish Outlined_14
+  - first:
+      213: -2179258115374110084
+    second: All Fish Outlined_15
+  - first:
+      213: -1912533229248593101
+    second: All Fish Outlined_16
+  - first:
+      213: 3625740879729919069
+    second: All Fish Outlined_17
+  - first:
+      213: -5179813507586300566
+    second: All Fish Outlined_18
+  - first:
+      213: -3305286663752948554
+    second: All Fish Outlined_19
+  - first:
+      213: -5810426063766242231
+    second: All Fish Outlined_20
+  - first:
+      213: 8146925547231960804
+    second: All Fish Outlined_21
+  - first:
+      213: -565224263495740266
+    second: All Fish Outlined_22
+  - first:
+      213: 4679967518731800982
+    second: All Fish Outlined_23
+  - first:
+      213: 4410588680406804110
+    second: All Fish Outlined_24
+  - first:
+      213: -3342169349502077735
+    second: All Fish Outlined_25
+  - first:
+      213: 8810855321336879096
+    second: All Fish Outlined_26
+  - first:
+      213: -4318270605135536907
+    second: All Fish Outlined_27
+  - first:
+      213: 324257841379209978
+    second: All Fish Outlined_28
+  - first:
+      213: 6956945563622052384
+    second: All Fish Outlined_29
+  - first:
+      213: -6023845477703429137
+    second: All Fish Outlined_30
+  - first:
+      213: -2693808290943268351
+    second: All Fish Outlined_31
+  - first:
+      213: 1420417957353734121
+    second: All Fish Outlined_32
+  - first:
+      213: -5335211240494431439
+    second: All Fish Outlined_33
+  - first:
+      213: -6945657093004685483
+    second: All Fish Outlined_34
+  - first:
+      213: -8786673747862261894
+    second: All Fish Outlined_35
+  - first:
+      213: 4088677912185159179
+    second: All Fish Outlined_36
+  - first:
+      213: 8307591014162383713
+    second: All Fish Outlined_37
+  - first:
+      213: 1609223953916897539
+    second: All Fish Outlined_38
+  - first:
+      213: -6951754408866918322
+    second: All Fish Outlined_39
+  - first:
+      213: -5866115073425662917
+    second: All Fish Outlined_40
+  - first:
+      213: 6036586495166869666
+    second: All Fish Outlined_41
+  - first:
+      213: -252399688200739537
+    second: All Fish Outlined_42
+  - first:
+      213: -857248063076217166
+    second: All Fish Outlined_43
+  - first:
+      213: 5773012209213455052
+    second: All Fish Outlined_44
+  - first:
+      213: -2553379975489546169
+    second: All Fish Outlined_45
+  - first:
+      213: 1416483175806095342
+    second: All Fish Outlined_46
+  - first:
+      213: 1197191071854619807
+    second: All Fish Outlined_47
+  - first:
+      213: -1309148177485988247
+    second: All Fish Outlined_48
+  - first:
+      213: 8418872460932174580
+    second: All Fish Outlined_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: All Fish Outlined_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1619d87ee650530800000000000000
+      internalID: 3820581799685349873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 129
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ede31a3044bc0150800000000000000
+      internalID: 5840241004737981925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 144
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc6ccf20e012a0d0800000000000000
+      internalID: -3413147012532769543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 128
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34fdb51425303ec0800000000000000
+      internalID: -3589310473914420161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 146
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312d09c91b9dbd390800000000000000
+      internalID: -7792395373375335917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16874059fe9a60b50800000000000000
+      internalID: 6559116753774082145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 143
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304c01e2807a9ffe0800000000000000
+      internalID: -1154708175869393917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 127
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3075a3f1bbc74d460800000000000000
+      internalID: 7265569241980098307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 143
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a631c72ca7077f990800000000000000
+      internalID: -7352284194107813014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8f50e05ef321510800000000000000
+      internalID: 1518346277392611494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 111
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d5e0e6968155550800000000000000
+      internalID: 6148847707341348193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 96
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583bff3ebf8bb3440800000000000000
+      internalID: 4916726810206516101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 112
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd62d386518917a00800000000000000
+      internalID: 752549830458156763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3adb5a9c34bf4b0800000000000000
+      internalID: -5405652394379992116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 111
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f1815df89d0c530800000000000000
+      internalID: 3873334891317305129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 95
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a2d3f4a48b1c1e0800000000000000
+      internalID: -2179258115374110084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_16
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 111
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333c18939215575e0800000000000000
+      internalID: -1912533229248593101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_17
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 95
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d540aefbe18315230800000000000000
+      internalID: 3625740879729919069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 114
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a656c850f0b9d18b0800000000000000
+      internalID: -5179813507586300566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b46b2e9a434122d0800000000000000
+      internalID: -3305286663752948554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cba8ba7483d5fa0800000000000000
+      internalID: -5810426063766242231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 80
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eed056fe91bf0170800000000000000
+      internalID: 8146925547231960804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 63
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69497ebe68be728f0800000000000000
+      internalID: -565224263495740266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 83
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691106aa9a592f040800000000000000
+      internalID: 4679967518731800982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_24
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 63
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a10a590f853d30800000000000000
+      internalID: 4410588680406804110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 79
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4fab72faa3e91d0800000000000000
+      internalID: -3342169349502077735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_26
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 63
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f715ab9b32764a70800000000000000
+      internalID: 8810855321336879096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_27
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 79
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc92e883cb6214c0800000000000000
+      internalID: -4318270605135536907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_28
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 63
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2fa0be9ceff7400800000000000000
+      internalID: 324257841379209978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0221c6171290c8060800000000000000
+      internalID: 6956945563622052384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 63
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3d4a72470076ca0800000000000000
+      internalID: -6023845477703429137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 47
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a035db1abad9ad0800000000000000
+      internalID: -2693808290943268351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efb7a44b9656b310800000000000000
+      internalID: 1420417957353734121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_33
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 48
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13388a8d4a585f5b0800000000000000
+      internalID: -5335211240494431439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 47
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f88cf6ca11c9f90800000000000000
+      internalID: -6945657093004685483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 35
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f6b65b7c67f0680800000000000000
+      internalID: -8786673747862261894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 33
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e38ccf5e6edb830800000000000000
+      internalID: 4088677912185159179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_37
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 33
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163406a030e7a4370800000000000000
+      internalID: 8307591014162383713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_38
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 33
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3092449f8ac155610800000000000000
+      internalID: 1609223953916897539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 34
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e405bb57238668f90800000000000000
+      internalID: -6951754408866918322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c16e4bb6f579ea0800000000000000
+      internalID: -5866115073425662917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_41
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 18
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a077542f6346c350800000000000000
+      internalID: 6036586495166869666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_42
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 16
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25206322db4f7cf0800000000000000
+      internalID: -252399688200739537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_43
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be43f3bd617a14f0800000000000000
+      internalID: -857248063076217166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_44
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 16
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca392e740cdd1050800000000000000
+      internalID: 5773012209213455052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_45
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 17
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7489950d072909cd0800000000000000
+      internalID: -2553379975489546169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_46
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef4d3c81fb58a310800000000000000
+      internalID: 1416483175806095342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_47
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ce926dfe64d9010800000000000000
+      internalID: 1197191071854619807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_48
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96ef8923ba8f4dde0800000000000000
+      internalID: -1309148177485988247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All Fish Outlined_49
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25e2be5e7d5d470800000000000000
+      internalID: 8418872460932174580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      All Fish Outlined_0: 3820581799685349873
+      All Fish Outlined_1: 5840241004737981925
+      All Fish Outlined_10: 6148847707341348193
+      All Fish Outlined_11: 4916726810206516101
+      All Fish Outlined_12: 752549830458156763
+      All Fish Outlined_13: -5405652394379992116
+      All Fish Outlined_14: 3873334891317305129
+      All Fish Outlined_15: -2179258115374110084
+      All Fish Outlined_16: -1912533229248593101
+      All Fish Outlined_17: 3625740879729919069
+      All Fish Outlined_18: -5179813507586300566
+      All Fish Outlined_19: -3305286663752948554
+      All Fish Outlined_2: -3413147012532769543
+      All Fish Outlined_20: -5810426063766242231
+      All Fish Outlined_21: 8146925547231960804
+      All Fish Outlined_22: -565224263495740266
+      All Fish Outlined_23: 4679967518731800982
+      All Fish Outlined_24: 4410588680406804110
+      All Fish Outlined_25: -3342169349502077735
+      All Fish Outlined_26: 8810855321336879096
+      All Fish Outlined_27: -4318270605135536907
+      All Fish Outlined_28: 324257841379209978
+      All Fish Outlined_29: 6956945563622052384
+      All Fish Outlined_3: -3589310473914420161
+      All Fish Outlined_30: -6023845477703429137
+      All Fish Outlined_31: -2693808290943268351
+      All Fish Outlined_32: 1420417957353734121
+      All Fish Outlined_33: -5335211240494431439
+      All Fish Outlined_34: -6945657093004685483
+      All Fish Outlined_35: -8786673747862261894
+      All Fish Outlined_36: 4088677912185159179
+      All Fish Outlined_37: 8307591014162383713
+      All Fish Outlined_38: 1609223953916897539
+      All Fish Outlined_39: -6951754408866918322
+      All Fish Outlined_4: -7792395373375335917
+      All Fish Outlined_40: -5866115073425662917
+      All Fish Outlined_41: 6036586495166869666
+      All Fish Outlined_42: -252399688200739537
+      All Fish Outlined_43: -857248063076217166
+      All Fish Outlined_44: 5773012209213455052
+      All Fish Outlined_45: -2553379975489546169
+      All Fish Outlined_46: 1416483175806095342
+      All Fish Outlined_47: 1197191071854619807
+      All Fish Outlined_48: -1309148177485988247
+      All Fish Outlined_49: 8418872460932174580
+      All Fish Outlined_5: 6559116753774082145
+      All Fish Outlined_6: -1154708175869393917
+      All Fish Outlined_7: 7265569241980098307
+      All Fish Outlined_8: -7352284194107813014
+      All Fish Outlined_9: 1518346277392611494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
