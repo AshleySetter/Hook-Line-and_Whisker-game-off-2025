@@ -621,12 +621,12 @@ TextureImporter:
       name: Spring Crops_16
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 63
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 12
+        height: 16
+      alignment: 9
+      pivot: {x: 0.49377632, y: 0.97148466}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -643,13 +643,13 @@ TextureImporter:
       name: Spring Crops_17
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 63
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        width: 15
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5199178, y: 0.95747995}
+      border: {x: 1, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
