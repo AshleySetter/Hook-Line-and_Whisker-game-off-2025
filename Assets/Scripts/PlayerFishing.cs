@@ -12,7 +12,7 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private GameObject waterSplash;
     [SerializeField] private GameObject fishShadow;
     [SerializeField] private FishSO[] fishes;
-    [SerializeField] private Tilemap groundTileMap;
+    [SerializeField] private Tilemap waterTileMap;
     [SerializeField] private TileBase waterTileBase;
     [SerializeField] private Animator animator;
 
@@ -90,8 +90,8 @@ public class PlayerFishing : MonoBehaviour
     public bool IsFacingWater()
     {
         Vector3 inFrontOfPlayer = this.transform.position + PlayerMovement.Instance.GetFacingVector();
-        Vector3Int tileMapCell = groundTileMap.WorldToCell(inFrontOfPlayer);
-        TileBase tileInFrontOfPlayer = groundTileMap.GetTile(tileMapCell);
+        Vector3Int tileMapCell = waterTileMap.WorldToCell(inFrontOfPlayer);
+        TileBase tileInFrontOfPlayer = waterTileMap.GetTile(tileMapCell);
         return tileInFrontOfPlayer == waterTileBase;
     }
 
