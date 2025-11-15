@@ -30,7 +30,7 @@ public class CatchDisplay : MonoBehaviour
     {
         caughtFish = fishSO;
         fishImage.sprite = caughtFish.fishSprite;
-        caughtFishNameText.text = caughtFish.fishName;
+        caughtFishNameText.text = $"you caught a {caughtFish.fishName}";
     }
 
     public void SetActive()
