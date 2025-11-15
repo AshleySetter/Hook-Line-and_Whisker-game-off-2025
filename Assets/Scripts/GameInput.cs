@@ -9,6 +9,7 @@ public class GameInput : MonoBehaviour
     public InputSystem_Actions playerInputActions;
     public event EventHandler OnInteractAction;
     public event EventHandler OnReelAction;
+    public event EventHandler OnEscapeAction;
 
     private void Awake()
     {
@@ -18,6 +19,12 @@ public class GameInput : MonoBehaviour
         playerInputActions.Player.Enable();
         playerInputActions.Player.Interact.performed += Interact_performed;
         playerInputActions.Player.Reel.performed += Reel_performed;
+        playerInputActions.Player.Escape.performed += Escape_performed;
+    }
+
+    private void Escape_performed(InputAction.CallbackContext context)
+    {
+        OnEscapeAction?.Invoke(this, EventArgs.Empty);
     }
 
     private void Reel_performed(InputAction.CallbackContext context)

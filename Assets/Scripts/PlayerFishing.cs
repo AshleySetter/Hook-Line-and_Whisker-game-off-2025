@@ -15,6 +15,7 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private Tilemap waterTileMap;
     [SerializeField] private TileBase waterTileBase;
     [SerializeField] private Animator animator;
+    [SerializeField] private AudioClip castSound;
 
     private FishingState fishingState;
     private float timeToCast = 1f; // length of cast animation
@@ -213,13 +214,13 @@ public class PlayerFishing : MonoBehaviour
 
     private void GameInput_OnInteractAction(object sender, EventArgs e)
     {
-        Debug.Log("start fishing...");
         if (IsFishingAllowed() && fishingState == FishingState.NotFishing)
         {
             castingTimer = 0;
             SetNextBobberLocation();
             animator.SetBool("IsFishing", true);
             fishingState = FishingState.Casting;
+            SoundFXManager.Instance.PlaySoundFXClip(castSound, transform, 1f, 0.8f, 1.2f);
         }
         else if (fishingState != FishingState.NotFishing)
         {

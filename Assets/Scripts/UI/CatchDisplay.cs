@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class CatchDisplay : MonoBehaviour
         closeButton.onClick.AddListener(() =>
         {
             catchDisplay.SetActive(false);
+            EscapeManager.Instance.SetActiveWindow(null);
         });
     }
 
@@ -36,5 +38,6 @@ public class CatchDisplay : MonoBehaviour
     public void SetActive()
     {
         catchDisplay.SetActive(true);
+        EscapeManager.Instance.SetActiveWindow(catchDisplay);
     }
 }
