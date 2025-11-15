@@ -1,14 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class FishBucket : MonoBehaviour
+public class FishBucket : MonoBehaviour, FishContainer
 {
     public static FishBucket Instance { get; private set; }
-
+    private List<FishSO> fishInBucket;
     private bool withinInteractDistance;
 
     private void Awake()
     {
         Instance = this;
+        fishInBucket = new List<FishSO>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -36,4 +38,51 @@ public class FishBucket : MonoBehaviour
         return withinInteractDistance;
     }
 
+    public int GetNumberOfFish()
+    {
+        return fishInBucket.Count;
+    }
+
+    public bool IsFull()
+    {
+        return false;
+    }
+
+    public void AddFish(FishSO fish)
+    {
+        fishInBucket.Add(fish);
+    }
+
+    public void TakeAllFish(FishContainer newContainer)
+    {
+        FishSO[] fishes = fishInBucket.ToArray();
+        for (int i = 0; i < fishes.Length; i++)
+        {
+            if (newContainer.IsFull())
+            {
+                Debug.Log($"new container {newContainer} is full ceasing transfer from inventory");
+                break;
+            }
+            newContainer.AddFish(fishes[i]);
+            StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+            {
+                // play fish transfer visual / sound fx
+                Debug.Log("Fish transferred from bucket");
+            }));
+            fishInBucket.RemoveAt(i);
+        }
+    }
+
+    public void TakeFish(FishContainer newContainer)
+    {
+        int fishIndexTaken = UnityEngine.Random.Range(0, fishInBucket.Count);
+        FishSO fishTaken = fishInBucket[fishIndexTaken];
+        fishInBucket.RemoveAt(fishIndexTaken);
+        newContainer.AddFish(fishTaken);
+    }
+
+    public FishSO[] GetFish()
+    {
+        return fishInBucket.ToArray();
+    }
 }

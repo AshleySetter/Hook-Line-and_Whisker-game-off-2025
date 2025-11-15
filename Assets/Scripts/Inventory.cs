@@ -41,6 +41,7 @@ public class Inventory : MonoBehaviour, FishContainer
     public void TakeAllFish(FishContainer newContainer)
     {
         FishSO[] fishes = fishInInventory.ToArray();
+        int fishRemoved = 0;
         for (int i = 0; i < fishes.Length; i++)
         {
             if (newContainer.IsFull())
@@ -55,8 +56,9 @@ public class Inventory : MonoBehaviour, FishContainer
                 SoundFXManager.Instance.PlaySoundFXClip(fishTransferSound, this.transform, 1, 1 + 0.5f * i);
                 Debug.Log("Fish transferred");
             }));
-            fishInInventory.RemoveAt(i);
+            fishRemoved++;
         }
+        fishInInventory.RemoveRange(0, fishRemoved);
         OnInventoryChanged?.Invoke();
     }
 
