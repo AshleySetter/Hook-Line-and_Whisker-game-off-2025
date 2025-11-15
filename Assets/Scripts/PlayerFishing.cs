@@ -115,7 +115,6 @@ public class PlayerFishing : MonoBehaviour
 
     private void Start()
     {
-        GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
         GameInput.Instance.OnReelAction += GameInput_OnReelAction;
         fishingState = FishingState.NotFishing;
         animator.SetBool("IsFishing", false);
@@ -212,22 +211,20 @@ public class PlayerFishing : MonoBehaviour
         UpdateBobberLocation();
     }
 
-    private void GameInput_OnInteractAction(object sender, EventArgs e)
+    public void StartFishing()
     {
-        if (IsFishingAllowed() && fishingState == FishingState.NotFishing)
-        {
-            castingTimer = 0;
-            SetNextBobberLocation();
-            animator.SetBool("IsFishing", true);
-            fishingState = FishingState.Casting;
-            SoundFXManager.Instance.PlaySoundFXClip(castSound, transform, 1f, 0.8f, 1.2f);
-        }
-        else if (fishingState != FishingState.NotFishing)
-        {
-            animator.SetBool("IsFishing", false);
-            fishingState = FishingState.NotFishing;
-            SetBobberState(BobberState.NotVisible);
-        }
+        castingTimer = 0;
+        SetNextBobberLocation();
+        animator.SetBool("IsFishing", true);
+        fishingState = FishingState.Casting;
+        SoundFXManager.Instance.PlaySoundFXClip(castSound, transform, 1f, 0.8f, 1.2f);
+    }
+    
+    public void StopFishing()
+    {
+        animator.SetBool("IsFishing", false);
+        fishingState = FishingState.NotFishing;
+        SetBobberState(BobberState.NotVisible);
     }
 
     private void StartFighting()
@@ -290,6 +287,7 @@ public class PlayerFishing : MonoBehaviour
                 Debug.Log($"You caught a {hookedFish.fishName}");
                 CatchDisplay.Instance.SetCaughtFish(hookedFish);
                 CatchDisplay.Instance.SetActive();
+                Inventory.Instance.AddFish(hookedFish);
                 fishingState = FishingState.NotFishing;
                 animator.SetBool("IsFishing", false);
                 break;

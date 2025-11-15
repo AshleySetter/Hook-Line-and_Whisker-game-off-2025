@@ -35,6 +35,11 @@ public class SoundFXManager : MonoBehaviour
         Destroy(audioSource.gameObject, clipLength);
     }
 
+    public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume, float pitch)
+    {
+        PlaySoundFXClip(audioClip, spawnTransform, volume, pitch, pitch);
+    }
+
     public void PlayRandomSoundFXClip(AudioClip[] audioClips, Transform spawnTransform, float volume, float minPitch = 1, float maxPitch = 1)
     {
         int rand = Random.Range(0, audioClips.Length);
