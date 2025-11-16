@@ -285,8 +285,8 @@ public class PlayerFishing : MonoBehaviour
                 SetBobberState(BobberState.NotVisible);
                 CatchBar.Instance.gameObject.SetActive(false);
                 Debug.Log($"You caught a {hookedFish.fishName}");
-                CatchDisplay.Instance.SetCaughtFish(hookedFish);
-                CatchDisplay.Instance.SetActive();
+                // CatchDisplay.Instance.SetCaughtFish(hookedFish);
+                // CatchDisplay.Instance.SetActive();
                 Inventory.Instance.AddFish(hookedFish);
                 fishingState = FishingState.NotFishing;
                 animator.SetBool("IsFishing", false);

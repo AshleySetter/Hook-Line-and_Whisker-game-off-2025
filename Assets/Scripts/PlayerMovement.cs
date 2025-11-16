@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (PlayerFishing.Instance.GetIsFishing())
         {
+            animator.SetBool("IsMoving", false);
             return;
         }
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalised();
