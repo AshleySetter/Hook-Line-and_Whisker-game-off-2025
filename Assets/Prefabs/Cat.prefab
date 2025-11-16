@@ -142,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 0.009161512
+  m_labelHash: 1.3971405e-28
   m_SpriteKey: 0
   m_SpriteHash: 163368403
 --- !u!1 &1855912621751799068
@@ -311,6 +311,11 @@ MonoBehaviour:
   visual: {fileID: 1117250678870842411}
   animator: {fileID: 8131394992879026828}
   fishVisual: {fileID: 1855912621751799068}
+  spriteLibrary: {fileID: 3896122048892026657}
+  catSpriteLibraryAssets:
+  - {fileID: 7108339969198208228, guid: 5743457b55618144b9114e91a6c5b2a7, type: 3}
+  - {fileID: 7108339969198208228, guid: 36d1458f9579b1542b8590ba929d7ace, type: 3}
+  - {fileID: 7108339969198208228, guid: 724e1870c5608824bab7e4fd8ae89b95, type: 3}
 --- !u!58 &5445574009612226
 CircleCollider2D:
   m_ObjectHideFlags: 0

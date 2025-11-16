@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.U2D.Animation;
 
 public class CatAIController : MonoBehaviour, FishContainer
 {
@@ -7,6 +8,9 @@ public class CatAIController : MonoBehaviour, FishContainer
     [SerializeField] GameObject visual;
     [SerializeField] Animator animator;
     [SerializeField] GameObject fishVisual;
+    [SerializeField] SpriteLibrary spriteLibrary;
+    [SerializeField] SpriteLibraryAsset[] catSpriteLibraryAssets;
+
     private FishSO fish;
     
     private bool facingRight;
@@ -20,6 +24,7 @@ public class CatAIController : MonoBehaviour, FishContainer
         agent.updateUpAxis = false;
         facingRight = true;
         fishVisual.SetActive(false);
+        spriteLibrary.spriteLibraryAsset = catSpriteLibraryAssets[UnityEngine.Random.Range(0, catSpriteLibraryAssets.Length - 1)];
     }
 
     private void Update()
