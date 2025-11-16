@@ -6,6 +6,7 @@ public class FishBucket : MonoBehaviour, FishContainer
     public static FishBucket Instance { get; private set; }
     private List<FishSO> fishInBucket;
     private bool withinInteractDistance;
+    private bool heldByPlayer;
 
     private void Awake()
     {
@@ -84,5 +85,24 @@ public class FishBucket : MonoBehaviour, FishContainer
     public FishSO[] GetFish()
     {
         return fishInBucket.ToArray();
+    }
+
+    public void PickUp()
+    {
+        transform.parent = PlayerMovement.Instance.GetBucketCarryPoint();
+        transform.localPosition = Vector3.zero;
+        heldByPlayer = true;
+    }
+
+    public void PutDown()
+    {
+        transform.parent = null;
+        transform.position = PlayerMovement.Instance.GetPositionInFrontOfPlayer();
+        heldByPlayer = false;
+    }
+    
+    public bool IsHeldByPlayer()
+    {
+        return heldByPlayer;
     }
 }

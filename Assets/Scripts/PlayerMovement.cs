@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject visual;
+    [SerializeField] private GameObject bucketCarryPoint;
+
     private float walkSpeed = 3;
     private bool facingRight;
     private Vector3 facingVector;
@@ -52,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("FacingSideways", true);
             animator.SetBool("FacingAway", false);
             animator.SetBool("FacingCamera", false);
+            bucketCarryPoint.transform.localPosition = new Vector3(-0.1f, 0, 0);
         }
         else if (rigidBody.linearVelocity.y > 0)
         {
@@ -59,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("FacingAway", true);
             animator.SetBool("FacingCamera", false);
             facingVector = new Vector3(0, 1, 0);
+            bucketCarryPoint.transform.localPosition = new Vector3(0, -0.3f, 0);
         }
         else if (rigidBody.linearVelocity.y < 0)
         {
@@ -66,17 +70,29 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("FacingAway", false);
             animator.SetBool("FacingCamera", true);
             facingVector = new Vector3(0, -1, 0);
+            bucketCarryPoint.transform.localPosition = Vector3.zero;
         }
+    }
+
+    public Transform GetBucketCarryPoint()
+    {
+        return bucketCarryPoint.transform;
     }
 
     public Vector3 GetFacingVector()
     {
         return facingVector;
     }
-    
+
     private void FlipPlayer()
     {
         facingRight = !facingRight;
         visual.transform.localScale = new Vector3(visual.transform.localScale.x * -1, visual.transform.localScale.y, visual.transform.localScale.z);
+    }
+    
+    public Vector3 GetPositionInFrontOfPlayer()
+    {
+        Vector3 inFrontOfPlayer = this.transform.position + GetFacingVector();
+        return inFrontOfPlayer;
     }
 }

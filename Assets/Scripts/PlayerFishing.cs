@@ -90,7 +90,7 @@ public class PlayerFishing : MonoBehaviour
 
     public bool IsFacingWater()
     {
-        Vector3 inFrontOfPlayer = this.transform.position + PlayerMovement.Instance.GetFacingVector();
+        Vector3 inFrontOfPlayer = PlayerMovement.Instance.GetPositionInFrontOfPlayer();
         Vector3Int tileMapCell = waterTileMap.WorldToCell(inFrontOfPlayer);
         TileBase tileInFrontOfPlayer = waterTileMap.GetTile(tileMapCell);
         return tileInFrontOfPlayer == waterTileBase;
