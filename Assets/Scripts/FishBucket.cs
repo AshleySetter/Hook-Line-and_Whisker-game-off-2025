@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class FishBucket : MonoBehaviour, FishContainer
@@ -76,10 +77,15 @@ public class FishBucket : MonoBehaviour, FishContainer
 
     public void TakeFish(FishContainer newContainer)
     {
-        int fishIndexTaken = UnityEngine.Random.Range(0, fishInBucket.Count);
-        FishSO fishTaken = fishInBucket[fishIndexTaken];
-        fishInBucket.RemoveAt(fishIndexTaken);
-        newContainer.AddFish(fishTaken);
+        if (fishInBucket.Count > 0) {
+            int fishIndexTaken = UnityEngine.Random.Range(0, fishInBucket.Count - 1);
+            FishSO fishTaken = fishInBucket[fishIndexTaken];
+            fishInBucket.RemoveAt(fishIndexTaken);
+            newContainer.AddFish(fishTaken);
+        } else
+        {
+            Debug.LogError("Tried to take fish from empty fish bucket");
+        }
     }
 
     public FishSO[] GetFish()

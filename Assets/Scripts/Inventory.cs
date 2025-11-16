@@ -64,11 +64,17 @@ public class Inventory : MonoBehaviour, FishContainer
 
     public void TakeFish(FishContainer newContainer)
     {
-        int fishIndexTaken = UnityEngine.Random.Range(0, fishInInventory.Count);
-        FishSO fishTaken = fishInInventory[fishIndexTaken];
-        fishInInventory.RemoveAt(fishIndexTaken);
-        newContainer.AddFish(fishTaken);
-        OnInventoryChanged?.Invoke();
+        if (fishInInventory.Count > 0)
+        {
+            int fishIndexTaken = UnityEngine.Random.Range(0, fishInInventory.Count - 1);
+            FishSO fishTaken = fishInInventory[fishIndexTaken];
+            fishInInventory.RemoveAt(fishIndexTaken);
+            newContainer.AddFish(fishTaken);
+            OnInventoryChanged?.Invoke();
+        }else
+        {
+            Debug.LogError("Tried to take fish from empty inventory");
+        }
     }
 
     public FishSO[] GetFish()
