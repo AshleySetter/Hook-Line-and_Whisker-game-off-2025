@@ -12,9 +12,8 @@ public class CatAIController : MonoBehaviour, FishContainer
     [SerializeField] SpriteLibraryAsset[] catSpriteLibraryAssets;
 
     private FishSO fish;
-    
+    private Vector3 spawnPoint;
     private bool facingRight;
-
     NavMeshAgent agent;
 
     private void Start()
@@ -44,11 +43,16 @@ public class CatAIController : MonoBehaviour, FishContainer
         else
         {
             // go back home with fish
-            destination = Vector3.zero;
+            destination = spawnPoint;
         }
 
         agent.SetDestination(destination);
         HandleMovementAnimation();
+    }
+
+    public void SetSpawn(Vector3 spawnPoint)
+    {
+        this.spawnPoint = spawnPoint;
     }
     
     void OnTriggerEnter2D(Collider2D other)

@@ -7,7 +7,8 @@ public class CatSpawnPoint : MonoBehaviour
 
     public void SpawnCat()
     {
-        Instantiate(catPrefab, transform.position, Quaternion.identity);
+        GameObject catObj = Instantiate(catPrefab, transform.position, Quaternion.identity);
+        catObj.GetComponent<CatAIController>().SetSpawn(this.transform.position);
     }
 
     // Static method to spawn a cat at a random spawn point
@@ -28,5 +29,15 @@ public class CatSpawnPoint : MonoBehaviour
 
         // Spawn the cat
         chosenSpawn.SpawnCat();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out CatAIController cat))
+        {
+            if (cat.IsFull()) {
+                Destroy(cat.gameObject);
+            }
+        }
     }
 }
