@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MoxieRun_0
+      name: Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,7 +153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_1
+      name: Run_1
       rect:
         serializedVersion: 2
         x: 32
@@ -175,7 +175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_2
+      name: Run_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_3
+      name: Run_3
       rect:
         serializedVersion: 2
         x: 96
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_4
+      name: Run_4
       rect:
         serializedVersion: 2
         x: 128
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_5
+      name: Run_5
       rect:
         serializedVersion: 2
         x: 160
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MoxieRun_6
+      name: Run_6
       rect:
         serializedVersion: 2
         x: 192
@@ -300,13 +300,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MoxieRun_0: -4688713318967778014
-      MoxieRun_1: -4705084123303998596
-      MoxieRun_2: 4961992990345445226
-      MoxieRun_3: -1532248389825596433
-      MoxieRun_4: -2703951407121646934
-      MoxieRun_5: 6289620055031545941
-      MoxieRun_6: 5141703893004998117
+      Run_0: -4688713318967778014
+      Run_1: -4705084123303998596
+      Run_2: 4961992990345445226
+      Run_3: -1532248389825596433
+      Run_4: -2703951407121646934
+      Run_5: 6289620055031545941
+      Run_6: 5141703893004998117
+      _2: 4961992990345445226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

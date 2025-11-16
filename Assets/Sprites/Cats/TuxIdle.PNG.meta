@@ -128,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TuxIdle_0
+      name: Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxIdle_1
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxIdle_2
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxIdle_3
+      name: Idle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -216,7 +216,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxIdle_4
+      name: Idle_4
       rect:
         serializedVersion: 2
         x: 128
@@ -238,7 +238,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxIdle_5
+      name: Idle_5
       rect:
         serializedVersion: 2
         x: 160
@@ -275,12 +275,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TuxIdle_0: -4452142576871211442
-      TuxIdle_1: 2073645159970480726
-      TuxIdle_2: 1566504989235234142
-      TuxIdle_3: -3690875279567974108
-      TuxIdle_4: -291513815796082038
-      TuxIdle_5: 4785172380540691989
+      Idle_0: -4452142576871211442
+      Idle_1: 2073645159970480726
+      Idle_2: 1566504989235234142
+      Idle_3: -3690875279567974108
+      Idle_4: -291513815796082038
+      Idle_5: 4785172380540691989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

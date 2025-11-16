@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JinxRun_0
+      name: Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,7 +153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_1
+      name: Run_1
       rect:
         serializedVersion: 2
         x: 32
@@ -175,7 +175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_2
+      name: Run_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_3
+      name: Run_3
       rect:
         serializedVersion: 2
         x: 96
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_4
+      name: Run_4
       rect:
         serializedVersion: 2
         x: 128
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_5
+      name: Run_5
       rect:
         serializedVersion: 2
         x: 160
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JinxRun_6
+      name: Run_6
       rect:
         serializedVersion: 2
         x: 192
@@ -300,13 +300,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      JinxRun_0: -4286951474456246349
-      JinxRun_1: -5562648880279726663
-      JinxRun_2: 3961149072322098676
-      JinxRun_3: -3643926000809911645
-      JinxRun_4: 9107319929907781544
-      JinxRun_5: 1510876614913249192
-      JinxRun_6: -5723404341369257579
+      Run_0: -4286951474456246349
+      Run_1: -5562648880279726663
+      Run_2: 3961149072322098676
+      Run_3: -3643926000809911645
+      Run_4: 9107319929907781544
+      Run_5: 1510876614913249192
+      Run_6: -5723404341369257579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

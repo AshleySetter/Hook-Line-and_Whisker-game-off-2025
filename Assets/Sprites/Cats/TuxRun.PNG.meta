@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TuxRun_0
+      name: Run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,7 +153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_1
+      name: Run_1
       rect:
         serializedVersion: 2
         x: 32
@@ -175,7 +175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_2
+      name: Run_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_3
+      name: Run_3
       rect:
         serializedVersion: 2
         x: 96
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_4
+      name: Run_4
       rect:
         serializedVersion: 2
         x: 128
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_5
+      name: Run_5
       rect:
         serializedVersion: 2
         x: 160
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TuxRun_6
+      name: Run_6
       rect:
         serializedVersion: 2
         x: 192
@@ -300,13 +300,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TuxRun_0: -3167689235564016832
-      TuxRun_1: 8073117517765740539
-      TuxRun_2: -5640973342998810652
-      TuxRun_3: -3823112775417850372
-      TuxRun_4: 8561727453829031672
-      TuxRun_5: -1582918329336394265
-      TuxRun_6: 8009048738331935705
+      Run_0: -3167689235564016832
+      Run_1: 8073117517765740539
+      Run_2: -5640973342998810652
+      Run_3: -3823112775417850372
+      Run_4: 8561727453829031672
+      Run_5: -1582918329336394265
+      Run_6: 8009048738331935705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
