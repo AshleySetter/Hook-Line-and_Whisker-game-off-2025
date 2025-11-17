@@ -30,16 +30,16 @@ public class PlayerFishing : MonoBehaviour
     private Vector3 bobberLocation;
     private float bobberMaxAngle = 20;
     private float bobberMinDistance = 2;
-    private float bobberMaxDistance = 5;
+    private float bobberMaxDistance = 8;
     private float fightTime;
     private float fightTimer;
     private FishSO hookedFish;
     private float fishAngle;
     private float fishDistance;
-    private float reelDistance => hookedFish.reelDistance;
     private float catchDistance = 1f;
     private BobberState bobberState;
-    private float numberOfHooks;
+    private float numberOfHooks; // can be upgraded
+    private float reelDistance; // can be upgraded
 
     public enum FishingState
     {
@@ -129,6 +129,7 @@ public class PlayerFishing : MonoBehaviour
         SetBobberState(BobberState.NotVisible);
         CatchBar.Instance.gameObject.SetActive(false);
         numberOfHooks = 1;
+        reelDistance = 0.5f;
     }
 
     private void SetReelGreenPercentage()

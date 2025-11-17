@@ -19,8 +19,8 @@ public class CatchBar : MonoBehaviour
 
     private float maxReelMarkerMovement = 404;
     private float reelValue;
-    private float reelPercentage;
-    private float reelBoostPercentage;
+    private float reelPercentage; // can be upgraded
+    private float reelBoostPercentage; // can be upgraded
 
     private void Awake()
     {
