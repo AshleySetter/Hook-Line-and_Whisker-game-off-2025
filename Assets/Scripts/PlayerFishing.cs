@@ -16,6 +16,7 @@ public class PlayerFishing : MonoBehaviour
     [SerializeField] private TileBase waterTileBase;
     [SerializeField] private Animator animator;
     [SerializeField] private AudioClip castSound;
+    [SerializeField] private GameObject fishingLine;
 
     private FishingState fishingState;
     private float timeToCast = 1f; // length of cast animation
@@ -68,21 +69,25 @@ public class PlayerFishing : MonoBehaviour
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
                 fishShadow.SetActive(false);
+                fishingLine.SetActive(false);
                 break;
             case BobberState.Fighting:
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(true);
                 fishShadow.SetActive(false);
+                fishingLine.SetActive(true);
                 break;
             case BobberState.Reelable:
                 waterRipples.SetActive(false);
                 waterSplash.SetActive(false);
                 fishShadow.SetActive(true);
+                fishingLine.SetActive(true);
                 break;
             case BobberState.Waiting:
                 waterRipples.SetActive(true);
                 waterSplash.SetActive(false);
                 fishShadow.SetActive(false);
+                fishingLine.SetActive(true);
                 break;
         }
 
@@ -184,7 +189,7 @@ public class PlayerFishing : MonoBehaviour
     {
         Vector3 facingVector = PlayerMovement.Instance.GetFacingVector();
         Vector3 offset = fishDistance * facingVector;
-        Vector3 bobberLocation = Quaternion.Euler(0f, 0f, fishAngle) * offset;
+        bobberLocation = Quaternion.Euler(0f, 0f, fishAngle) * offset;
         GameObject[] bobberSprites = new GameObject[] { waterRipples, waterSplash, fishShadow };
         foreach (var sprite in bobberSprites)
         {
@@ -225,6 +230,7 @@ public class PlayerFishing : MonoBehaviour
         animator.SetBool("IsFishing", false);
         fishingState = FishingState.NotFishing;
         SetBobberState(BobberState.NotVisible);
+        CatchBar.Instance.gameObject.SetActive(false);
     }
 
     private void StartFighting()
