@@ -39,6 +39,7 @@ public class PlayerFishing : MonoBehaviour
     private float reelDistance => hookedFish.reelDistance;
     private float catchDistance = 1f;
     private BobberState bobberState;
+    private float numberOfHooks;
 
     public enum FishingState
     {
@@ -127,6 +128,12 @@ public class PlayerFishing : MonoBehaviour
         SetNextBobberLocation();
         SetBobberState(BobberState.NotVisible);
         CatchBar.Instance.gameObject.SetActive(false);
+        numberOfHooks = 1;
+    }
+
+    private void SetReelGreenPercentage()
+    {
+        
     }
 
     private void GameInput_OnReelAction(object sender, EventArgs e)
@@ -269,9 +276,9 @@ public class PlayerFishing : MonoBehaviour
             case FishingState.HookedFish:
                 if (hookingTimer > timeToHook)
                 {
-                    hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length - 1)];
-                    CatchBar.Instance.SetTween(hookedFish.reelTweenDuration, hookedFish.reelTweenEaseType);
-                    CatchBar.Instance.SetReelPercentage(hookedFish.reelPercentageGreen);
+                    hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length)];
+                    Debug.Log(hookedFish);
+                    CatchBar.Instance.AddFrequency(hookedFish.reelFrequency);
                     StartFighting();
                 }
                 hookingTimer += Time.deltaTime;
@@ -296,6 +303,7 @@ public class PlayerFishing : MonoBehaviour
                 Inventory.Instance.AddFish(hookedFish);
                 fishingState = FishingState.NotFishing;
                 animator.SetBool("IsFishing", false);
+                CatchBar.Instance.ResetFrequencies();
                 break;
             case FishingState.Failed:
                 SetBobberState(BobberState.NotVisible);
@@ -303,6 +311,7 @@ public class PlayerFishing : MonoBehaviour
                 fishingState = FishingState.NotFishing;
                 animator.SetBool("IsFishing", false);
                 Debug.Log($"You failed to catch a fish");
+                CatchBar.Instance.ResetFrequencies();
                 break;
         }
     }

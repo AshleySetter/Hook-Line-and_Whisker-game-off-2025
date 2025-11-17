@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using Tweens;
+using System.Collections.Generic;
 
 public class CatchBar : MonoBehaviour
 {
@@ -8,52 +8,31 @@ public class CatchBar : MonoBehaviour
 
     [SerializeField] private Image CatchBarLeft;
     [SerializeField] private Image CatchBarRight;
+    [SerializeField] private Image BoostBarLeft;
+    [SerializeField] private Image BoostBarRight;
     [SerializeField] private Image ReelMarker;
     [SerializeField] private float percentageDebug;
+    [SerializeField] private float boostPercentageDebug;
+    private List<float> frequencies;
+    private bool pause;
+
 
     private float maxReelMarkerMovement = 404;
     private float reelValue;
-    private TweenInstance tweenInstance;
     private float reelPercentage;
-    private float boostPercentage = 5f;
-    private FloatTween reelTween;
+    private float reelBoostPercentage;
 
     private void Awake()
     {
         Instance = this;
+        frequencies = new List<float>();
     }
 
     private void Start()
     {
-        SetTween(3f, EaseType.QuintInOut);
-    }
-    
-    public void SetTween(float duration, EaseType easeType)
-    {
-        if (tweenInstance != null)
-        {
-            tweenInstance.Cancel();
-        }
-        reelTween = new FloatTween
-        {
-            duration = duration,
-            usePingPong = true,
-            pingPongInterval = 0f,
-            repeatInterval = 0f,
-            isInfinite = true,
-            easeType = easeType,
-            from = -1,
-            to = 1,
-            onUpdate = (_, value) =>
-            {
-                reelValue = value;
-                ReelMarker.transform.localPosition = new Vector3(
-                    value * maxReelMarkerMovement,
-                    ReelMarker.transform.localPosition.y,
-                    ReelMarker.transform.localPosition.z);
-            },
-        };
-        tweenInstance = ReelMarker.gameObject.AddTween(reelTween);
+        SetReelPercentage(percentageDebug);
+        SetReelBoostPercentage(boostPercentageDebug);
+        pause = false;
     }
 
     public void SetReelPercentage(float reelPercentage)
@@ -63,6 +42,13 @@ public class CatchBar : MonoBehaviour
         this.reelPercentage = reelPercentage;
     }
 
+    public void SetReelBoostPercentage(float reelBoostPercentage)
+    {
+        BoostBarLeft.fillAmount = reelBoostPercentage / 100;
+        BoostBarRight.fillAmount = reelBoostPercentage / 100;
+        this.reelBoostPercentage = reelBoostPercentage;
+    }
+
     public bool GetCatchBarInGreen()
     {
         return Mathf.Abs(reelValue) * 100 < reelPercentage;
@@ -70,16 +56,44 @@ public class CatchBar : MonoBehaviour
 
     public bool GetCatchBarInBoost()
     {
-        return Mathf.Abs(reelValue) * 100 < boostPercentage;
+        return Mathf.Abs(reelValue) * 100 < reelBoostPercentage;
     }
 
     public void Pause()
     {
-        tweenInstance.isPaused = true;
+        pause = true;
+    }
+
+    public void UnPause()
+    {
+        pause = false;
+    }
+
+    public void AddFrequency(float frequency)
+    {
+        frequencies.Add(frequency);
+    }
+
+    public void ResetFrequencies()
+    {
+        frequencies.Clear();
     }
 
     private void Update()
     {
-        SetReelPercentage(percentageDebug);
+        if (!pause)
+        {
+            float value = 0;
+            foreach (var frequency in frequencies)
+            {
+                value += Mathf.Sin(2 * Mathf.PI * frequency * Time.time);
+            }
+            value /= frequencies.Count;
+            reelValue = value;
+            ReelMarker.transform.localPosition = new Vector3(
+                value * maxReelMarkerMovement,
+                ReelMarker.transform.localPosition.y,
+                ReelMarker.transform.localPosition.z);
+        }
     }
 }

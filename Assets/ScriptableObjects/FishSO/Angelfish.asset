@@ -16,9 +16,7 @@ MonoBehaviour:
   minFightTime: 1
   maxFightTime: 4
   reelDistance: 0.3
-  fightOnReelChance: 40
+  fightOnReelChance: 60
   fishWeight: 1
   fishSprite: {fileID: 8704251008440363128, guid: d0f175227feea654b94ae846a98eb627, type: 3}
-  reelTweenDuration: 1
-  reelTweenEaseType: 12
-  reelPercentageGreen: 20
+  reelFrequency: 2

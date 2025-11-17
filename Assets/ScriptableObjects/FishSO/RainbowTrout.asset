@@ -19,6 +19,4 @@ MonoBehaviour:
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: -4371949390409411560, guid: c69150af29d12e547879d4c540edcaff, type: 3}
-  reelTweenDuration: 3
-  reelTweenEaseType: 82
-  reelPercentageGreen: 30
+  reelFrequency: 0.79
