@@ -23,7 +23,7 @@ public class CatAIController : MonoBehaviour, FishContainer
         agent.updateUpAxis = false;
         facingRight = true;
         fishVisual.SetActive(false);
-        spriteLibrary.spriteLibraryAsset = catSpriteLibraryAssets[UnityEngine.Random.Range(0, catSpriteLibraryAssets.Length - 1)];
+        spriteLibrary.spriteLibraryAsset = catSpriteLibraryAssets[UnityEngine.Random.Range(0, catSpriteLibraryAssets.Length)];
     }
 
     private void Update()
