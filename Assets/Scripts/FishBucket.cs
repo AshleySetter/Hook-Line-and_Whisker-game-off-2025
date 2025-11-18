@@ -17,20 +17,16 @@ public class FishBucket : MonoBehaviour, FishContainer
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("on trigger enter");
         if (other.TryGetComponent(out PlayerMovement player))
         {
-            Debug.Log("player within distance");
             withinInteractDistance = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("on trigger exit");
         if (other.TryGetComponent(out PlayerMovement player))
         {
-            Debug.Log("player without distance");
             withinInteractDistance = false;
         }
     }
@@ -62,14 +58,12 @@ public class FishBucket : MonoBehaviour, FishContainer
         {
             if (newContainer.IsFull())
             {
-                Debug.Log($"new container {newContainer} is full ceasing transfer from inventory");
                 break;
             }
             newContainer.AddFish(fishes[i]);
             StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
             {
                 // play fish transfer visual / sound fx
-                Debug.Log("Fish transferred from bucket");
             }));
             fishInBucket.RemoveAt(i);
         }

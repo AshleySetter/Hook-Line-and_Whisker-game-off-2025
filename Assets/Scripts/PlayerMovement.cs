@@ -75,6 +75,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public GameObject GetVisual()
+    {
+        return visual;
+    }
+
     public Transform GetBucketCarryPoint()
     {
         return bucketCarryPoint.transform;

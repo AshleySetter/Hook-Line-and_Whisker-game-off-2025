@@ -51,11 +51,13 @@ public class CatchBar : MonoBehaviour
 
     public bool GetCatchBarInGreen()
     {
+        Debug.Log($"Catch bar in green: {Mathf.Abs(reelValue) * 100 < reelPercentage}");
         return Mathf.Abs(reelValue) * 100 < reelPercentage;
     }
 
     public bool GetCatchBarInBoost()
     {
+        Debug.Log($"Catch bar in boost: {Mathf.Abs(reelValue) * 100 < reelBoostPercentage}");
         return Mathf.Abs(reelValue) * 100 < reelBoostPercentage;
     }
 
@@ -74,6 +76,12 @@ public class CatchBar : MonoBehaviour
         frequencies.Add(frequency);
     }
 
+    public void RemoveFrequency(float frequency)
+    {
+        Debug.Log($"frequencies: {frequencies}");
+        frequencies.Remove(frequency);
+    }
+
     public void ResetFrequencies()
     {
         frequencies.Clear();
@@ -84,11 +92,14 @@ public class CatchBar : MonoBehaviour
         if (!pause)
         {
             float value = 0;
-            foreach (var frequency in frequencies)
+            if (frequencies.Count > 0)
             {
-                value += Mathf.Sin(2 * Mathf.PI * frequency * Time.time);
+                foreach (var frequency in frequencies)
+                {
+                    value += Mathf.Sin(2 * Mathf.PI * frequency * Time.time);
+                }
+                value /= frequencies.Count;
             }
-            value /= frequencies.Count;
             reelValue = value;
             ReelMarker.transform.localPosition = new Vector3(
                 value * maxReelMarkerMovement,

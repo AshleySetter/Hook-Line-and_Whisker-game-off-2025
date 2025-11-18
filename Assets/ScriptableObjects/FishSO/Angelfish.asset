@@ -15,8 +15,7 @@ MonoBehaviour:
   fishName: Angelfish
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0.3
   fightOnReelChance: 60
   fishWeight: 1
   fishSprite: {fileID: 8704251008440363128, guid: d0f175227feea654b94ae846a98eb627, type: 3}
-  reelFrequency: 2
+  reelFrequency: 1.342

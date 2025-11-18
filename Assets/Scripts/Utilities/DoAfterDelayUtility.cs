@@ -11,4 +11,10 @@ public static class DoAfterDelayUtility
         yield return new WaitForSeconds(delay);
         action?.Invoke(); // Safely invoke the function if it's not null
     }
+    
+    public static IEnumerator DoOnNextFrame(Action action)
+    {
+        yield return null; // wait exactly 1 frame
+        action?.Invoke();
+    }
 }

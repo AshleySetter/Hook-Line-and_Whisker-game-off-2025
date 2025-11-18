@@ -46,7 +46,6 @@ public class Inventory : MonoBehaviour, FishContainer
         {
             if (newContainer.IsFull())
             {
-                Debug.Log($"new container {newContainer} is full ceasing transfer from inventory");
                 break;
             }
             newContainer.AddFish(fishes[i]);
@@ -54,7 +53,6 @@ public class Inventory : MonoBehaviour, FishContainer
             {
                 // play fish transfer visual / sound fx
                 SoundFXManager.Instance.PlaySoundFXClip(fishTransferSound, this.transform, 1, 1 + 0.5f * i);
-                Debug.Log("Fish transferred");
             }));
             fishRemoved++;
         }

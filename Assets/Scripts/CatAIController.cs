@@ -59,15 +59,12 @@ public class CatAIController : MonoBehaviour, FishContainer
     {
         if (fish == null)
         {
-            Debug.Log("on trigger enter");
             if (other.TryGetComponent(out PlayerMovement player))
             {
-                Debug.Log("player within distance of Cat");
                 Inventory.Instance.TakeFish(this);
             }
             if (other.TryGetComponent(out FishBucket bucket))
             {
-                Debug.Log("bucket within distance of Cat");
                 bucket.TakeFish(this);
             }
         }
