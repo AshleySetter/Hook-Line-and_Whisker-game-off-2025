@@ -48,4 +48,7 @@ MonoBehaviour:
   waterSplashPrefab: {fileID: 7323838634580495571, guid: 0e3b186158a0f1c4bb826a7810361ef5, type: 3}
   fishShadowPrefab: {fileID: 6022476351010562331, guid: 3828147463ecf514bbb0b5d67728c08d, type: 3}
   fishingLinePrefab: {fileID: 213634894053507480, guid: 1dec5f17d37681447a3bf92947643b10, type: 3}
-  playerVisual: {fileID: 0}
+  splashingFightingFish: {fileID: 8300000, guid: d024aba6d26deef43921a6d35378c0ab, type: 3}
+  reelSuccess: {fileID: 8300000, guid: 9fd3a24091435f94eb4810f328b63011, type: 3}
+  reelBoost: {fileID: 8300000, guid: 1e82fa063d08cf9419a43b245f9a97d0, type: 3}
+  failedCatch: {fileID: 8300000, guid: e71bd10405bf7a64480a57cd1fb9788e, type: 3}

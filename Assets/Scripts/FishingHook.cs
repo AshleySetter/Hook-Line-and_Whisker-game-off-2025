@@ -9,8 +9,13 @@ public class FishingHook : MonoBehaviour
     [SerializeField] private GameObject waterRipplesPrefab;
     [SerializeField] private GameObject waterSplashPrefab;
     [SerializeField] private GameObject fishShadowPrefab;
-    private FishSO[] fishes;
     [SerializeField] private GameObject fishingLinePrefab;
+    [SerializeField] private AudioClip splashingFightingFish;
+    [SerializeField] private AudioClip reelSuccess;
+    [SerializeField] private AudioClip reelBoost;
+    [SerializeField] private AudioClip failedCatch;
+
+    private FishSO[] fishes;
     private GameObject playerVisual;
 
     private HookState hookState;
@@ -36,6 +41,7 @@ public class FishingHook : MonoBehaviour
     private GameObject waterSplash;
     private GameObject fishShadow;
     private GameObject fishingLine;
+    private Action splashingFightingSoundDestroyer;
 
     public enum HookState
     {
@@ -136,10 +142,13 @@ public class FishingHook : MonoBehaviour
                 {
                     Debug.Log("Fish Boost reeled!");
                     fishDistance -= reelDistance * 2;
+                    SoundFXManager.Instance.PlaySoundFXClip(reelBoost, this.transform, 0.5f);
+                    
                 } else
                 {
                     Debug.Log($"Fish reeled");
                     fishDistance -= reelDistance;
+                    SoundFXManager.Instance.PlaySoundFXClip(reelSuccess, this.transform, 0.5f);
                 }
                 fishDistance -= reelDistance;
                 UpdateBobberLocation();
@@ -178,6 +187,7 @@ public class FishingHook : MonoBehaviour
             {
                 Debug.Log("You reeled at the wrong time!");
                 hookState = HookState.Failed;
+                SoundFXManager.Instance.PlaySoundFXClip(failedCatch, this.transform, 0.5f);
             }
         }
     }
@@ -215,6 +225,7 @@ public class FishingHook : MonoBehaviour
 
     private void StartFighting()
     {
+        splashingFightingSoundDestroyer = SoundFXManager.Instance.PlayLoopingSoundFXClip(splashingFightingFish, this.transform, 0.2f);
         SetBobberState(BobberState.Fighting);
         hookState = HookState.Fighting;
         fightTimer = 0;
@@ -254,6 +265,7 @@ public class FishingHook : MonoBehaviour
             case HookState.Fighting:
                 if (fightTimer > fightTime)
                 {
+                    splashingFightingSoundDestroyer();
                     hookState = HookState.Reelable;
                     SetBobberState(BobberState.Reelable);
                 }
@@ -262,6 +274,7 @@ public class FishingHook : MonoBehaviour
             case HookState.Reelable:
                 break;
             case HookState.Caught:
+                splashingFightingSoundDestroyer();
                 SetBobberState(BobberState.NotVisible);
                 Debug.Log($"You caught a {hookedFish.fishName}");
                 // CatchDisplay.Instance.SetCaughtFish(hookedFish);
@@ -271,6 +284,7 @@ public class FishingHook : MonoBehaviour
                 CatchBar.Instance.RemoveFrequency(hookedFish.reelFrequency);
                 break;
             case HookState.Failed:
+                splashingFightingSoundDestroyer();
                 SetBobberState(BobberState.NotVisible);
                 hookState = HookState.NotFishing;
                 Debug.Log($"You failed to catch a fish");
