@@ -18,7 +18,7 @@ public class CatAIController : MonoBehaviour, FishContainer
     private bool facingRight;
     NavMeshAgent agent;
     private bool withinInteractDistance;
-    private float stealCooldown = 2f;
+    private float stealCooldown = 3f;
     private float stealCooldownTimer;
 
     private void OnEnable() => AllCats.Add(this);
