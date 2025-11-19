@@ -25,7 +25,7 @@ public class FishingHook : MonoBehaviour
     private Vector3 bobberLocation;
     private float bobberMaxAngle = 20;
     private float bobberMinDistance = 2;
-    private float bobberMaxDistance = 8;
+    private float bobberMaxDistance = 6.5f;
     private FishSO hookedFish;
     private float fishAngle;
     private float fishDistance;
