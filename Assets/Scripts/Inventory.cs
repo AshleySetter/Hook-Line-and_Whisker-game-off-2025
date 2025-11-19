@@ -69,7 +69,7 @@ public class Inventory : MonoBehaviour, FishContainer
             fishInInventory.RemoveAt(fishIndexTaken);
             newContainer.AddFish(fishTaken);
             OnInventoryChanged?.Invoke();
-        }else
+        } else
         {
             Debug.LogError("Tried to take fish from empty inventory");
         }

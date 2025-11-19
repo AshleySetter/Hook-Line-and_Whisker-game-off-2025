@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.U2D.Animation;
 
 public class CatAIController : MonoBehaviour, FishContainer
 {
+    public static readonly List<CatAIController> AllCats = new();
     [SerializeField] Transform target;
     [SerializeField] GameObject visual;
     [SerializeField] Animator animator;
@@ -15,6 +17,12 @@ public class CatAIController : MonoBehaviour, FishContainer
     private Vector3 spawnPoint;
     private bool facingRight;
     NavMeshAgent agent;
+    private bool withinInteractDistance;
+    private float stealCooldown = 2f;
+    private float stealCooldownTimer;
+
+    private void OnEnable() => AllCats.Add(this);
+    private void OnDisable() => AllCats.Remove(this);
 
     private void Start()
     {
@@ -24,6 +32,7 @@ public class CatAIController : MonoBehaviour, FishContainer
         facingRight = true;
         fishVisual.SetActive(false);
         spriteLibrary.spriteLibraryAsset = catSpriteLibraryAssets[UnityEngine.Random.Range(0, catSpriteLibraryAssets.Length)];
+        withinInteractDistance = false;
     }
 
     private void Update()
@@ -48,25 +57,50 @@ public class CatAIController : MonoBehaviour, FishContainer
 
         agent.SetDestination(destination);
         HandleMovementAnimation();
+        if (stealCooldownTimer > 0)
+        {
+            stealCooldownTimer -= Time.deltaTime;
+        }
+    }
+
+    public bool GetWithinInteractDistance()
+    {
+        return withinInteractDistance;
     }
 
     public void SetSpawn(Vector3 spawnPoint)
     {
         this.spawnPoint = spawnPoint;
     }
-    
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (fish == null)
         {
             if (other.TryGetComponent(out PlayerMovement player))
             {
-                Inventory.Instance.TakeFish(this);
+                if (stealCooldownTimer <= 0 && Inventory.Instance.GetNumberOfFish() > 0)
+                {
+                    Inventory.Instance.TakeFish(this);
+                    stealCooldownTimer = stealCooldown; // when they steal fish - start cooldown
+                }
             }
             if (other.TryGetComponent(out FishBucket bucket))
             {
                 bucket.TakeFish(this);
             }
+        }
+        if (other.TryGetComponent(out PlayerMovement _))
+        {
+            withinInteractDistance = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out PlayerMovement player))
+        {
+            withinInteractDistance = false;
         }
     }
 
@@ -137,6 +171,10 @@ public class CatAIController : MonoBehaviour, FishContainer
 
     public void TakeFish(FishContainer newContainer)
     {
+        if (newContainer as Object == Inventory.Instance)
+        {
+            stealCooldownTimer = stealCooldown; // if player takes fish - start cooldown timer
+        }
         newContainer.AddFish(fish);
         fish = null;
         fishVisual.SetActive(false);
