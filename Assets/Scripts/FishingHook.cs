@@ -84,10 +84,12 @@ public class FishingHook : MonoBehaviour
     {
         waitingTime = UnityEngine.Random.Range(minWaitingTime, maxWaitingTime);
         hookState = HookState.Waiting;
+        SetBobberState(BobberState.Waiting);
     }
     
     public void StopFishing()
     {
+        SetBobberState(BobberState.NotVisible);
         hookState = HookState.NotFishing;
     }
 
@@ -163,12 +165,16 @@ public class FishingHook : MonoBehaviour
                 }
             } else
             {
+                Debug.Log($"hook: {this.gameObject} - failed catch - not in green");
                 hookState = HookState.Failed;
             }
         }
         else
         {
-            if (hookState != HookState.Caught || hookState != HookState.NotFishing)
+            if (
+                hookState == HookState.Waiting ||
+                hookState == HookState.Fighting
+            )
             {
                 Debug.Log("You reeled at the wrong time!");
                 hookState = HookState.Failed;

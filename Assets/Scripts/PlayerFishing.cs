@@ -150,7 +150,13 @@ public class PlayerFishing : MonoBehaviour
                 bool allHooksFinished = true;
                 foreach (FishingHook hook in fishingHooks)
                 {
-                    if (hook.GetHookState() != FishingHook.HookState.Caught && hook.GetHookState() != FishingHook.HookState.Failed && hook.GetHookState() != FishingHook.HookState.AfterFailed)
+                    Debug.Log(hook.GetHookState());
+                    if (
+                        hook.GetHookState() != FishingHook.HookState.Caught &&
+                        hook.GetHookState() != FishingHook.HookState.Failed &&
+                        hook.GetHookState() != FishingHook.HookState.AfterFailed &&
+                        hook.GetHookState() != FishingHook.HookState.NotFishing
+                        )
                     {
                         allHooksFinished = false;
                     }
