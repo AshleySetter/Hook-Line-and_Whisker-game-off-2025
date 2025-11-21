@@ -59,8 +59,14 @@ public class SoundFXManager : MonoBehaviour
         // assign volume
         audioSource.volume = volume;
 
-        // assign random pitch shift
-        audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
+        if (minPitch == maxPitch)
+        {
+            audioSource.pitch = minPitch;
+        } else
+        {
+            // assign random pitch shift
+            audioSource.pitch = UnityEngine.Random.Range(minPitch, maxPitch);
+        }
 
         // play sound
         audioSource.Play();

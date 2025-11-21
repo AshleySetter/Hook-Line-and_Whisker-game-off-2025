@@ -23,7 +23,15 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (FishBucket.Instance.IsHeldByPlayer())
         {
-            FishBucket.Instance.PutDown();
+            if (FishMarket.Instance.GetWithinInteractDistance())
+            {
+                FishBucket.Instance.TakeAllFish(FishMarket.Instance);
+            } else {
+                FishBucket.Instance.PutDown();
+            }
+        } else if (FishMarket.Instance.GetWithinInteractDistance())
+        {
+            Inventory.Instance.TakeAllFish(FishMarket.Instance);
         }
         else
         {

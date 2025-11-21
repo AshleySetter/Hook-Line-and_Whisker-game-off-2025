@@ -5,6 +5,7 @@ using UnityEngine;
 public class FishBucket : MonoBehaviour, FishContainer
 {
     public static FishBucket Instance { get; private set; }
+    [SerializeField] private AudioClip coinGet;
     private List<FishSO> fishInBucket;
     private bool withinInteractDistance;
     private bool heldByPlayer;
@@ -54,19 +55,26 @@ public class FishBucket : MonoBehaviour, FishContainer
     public void TakeAllFish(FishContainer newContainer)
     {
         FishSO[] fishes = fishInBucket.ToArray();
+        int fishRemoved = 0;
         for (int i = 0; i < fishes.Length; i++)
         {
+            int indexForCallbacks = i;
             if (newContainer.IsFull())
             {
                 break;
             }
             newContainer.AddFish(fishes[i]);
-            StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+            if (newContainer is FishMarket)
             {
-                // play fish transfer visual / sound fx
-            }));
-            fishInBucket.RemoveAt(i);
+                StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+                {
+                    // play fish transfer visual / sound fx
+                    SoundFXManager.Instance.PlaySoundFXClip(coinGet, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                }));
+            }
+            fishRemoved++;
         }
+        fishInBucket.RemoveRange(0, fishRemoved);
     }
 
     public void TakeFish(FishContainer newContainer)

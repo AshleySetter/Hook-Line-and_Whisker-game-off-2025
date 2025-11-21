@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour, FishContainer
     private List<FishSO> fishInInventory;
     private int capacity = 5;
     [SerializeField] private AudioClip fishTransferSound;
+    [SerializeField] private AudioClip coinSound;
     public event Action OnInventoryChanged;
 
     private void Awake()
@@ -44,16 +45,27 @@ public class Inventory : MonoBehaviour, FishContainer
         int fishRemoved = 0;
         for (int i = 0; i < fishes.Length; i++)
         {
+            int indexForCallbacks = i;
             if (newContainer.IsFull())
             {
                 break;
             }
             newContainer.AddFish(fishes[i]);
-            StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+            if (newContainer is FishBucket) {
+                StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+                {
+                    // play fish transfer visual / sound fx
+                    SoundFXManager.Instance.PlaySoundFXClip(fishTransferSound, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                }));
+            }
+            else if (newContainer is FishMarket)
             {
-                // play fish transfer visual / sound fx
-                SoundFXManager.Instance.PlaySoundFXClip(fishTransferSound, this.transform, 1, 1 + 0.5f * i);
-            }));
+                StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
+                {
+                    // play fish transfer visual / sound fx
+                    SoundFXManager.Instance.PlaySoundFXClip(coinSound, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                }));
+            }
             fishRemoved++;
         }
         fishInInventory.RemoveRange(0, fishRemoved);

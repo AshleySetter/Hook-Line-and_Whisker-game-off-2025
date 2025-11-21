@@ -11,4 +11,5 @@ public class FishSO : ScriptableObject
     public float fishWeight; // unit of weight for fish - used to determine how many cats it feeds and value when sold
     public Sprite fishSprite;
     public float reelFrequency; // frequency at which the reel marker moves when trying to reel in this fish
+    public int fishValue; // value in coins
 }
