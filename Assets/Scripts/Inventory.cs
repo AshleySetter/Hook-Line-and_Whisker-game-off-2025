@@ -46,16 +46,17 @@ public class Inventory : MonoBehaviour, FishContainer
         for (int i = 0; i < fishes.Length; i++)
         {
             int indexForCallbacks = i;
+            FishSO fishForCallbacks = fishes[i];
             if (newContainer.IsFull())
             {
                 break;
             }
-            newContainer.AddFish(fishes[i]);
             if (newContainer is FishBucket) {
                 StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
                 {
                     // play fish transfer visual / sound fx
                     SoundFXManager.Instance.PlaySoundFXClip(fishTransferSound, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                    newContainer.AddFish(fishForCallbacks);
                 }));
             }
             else if (newContainer is FishMarket)
@@ -64,7 +65,11 @@ public class Inventory : MonoBehaviour, FishContainer
                 {
                     // play fish transfer visual / sound fx
                     SoundFXManager.Instance.PlaySoundFXClip(coinSound, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                    newContainer.AddFish(fishForCallbacks);
                 }));
+            } else
+            {
+                newContainer.AddFish(fishes[i]);
             }
             fishRemoved++;
         }

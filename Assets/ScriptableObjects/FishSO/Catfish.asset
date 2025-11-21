@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Catfish
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0.5
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: 7691470586555950613, guid: 2da2c9b18342fe6408c4e03f6c5acce4, type: 3}
   reelFrequency: 1.23
+  fishValue: 2

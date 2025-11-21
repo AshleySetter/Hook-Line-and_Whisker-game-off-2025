@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class FishMarket : MonoBehaviour, FishContainer
 {
     public static FishMarket Instance { get; private set; }
 
+    public event Action OnCoinsChanged;
     private int coins;
     private FishSO[] fish;
     private bool withinInteractDistance;
@@ -47,6 +49,7 @@ public class FishMarket : MonoBehaviour, FishContainer
     public void AddFish(FishSO fish)
     {
         coins += fish.fishValue;
+        OnCoinsChanged?.Invoke();
     }
 
     public FishSO[] GetFish()

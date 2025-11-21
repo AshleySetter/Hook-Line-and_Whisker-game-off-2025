@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Loudmouth Bass
   minFightTime: 1
   maxFightTime: 3
-  reelDistance: 0.2
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: 9043758647840957161, guid: dcfb63d18427f3d448bb3fb7a07a3b65, type: 3}
   reelFrequency: 1.2
+  fishValue: 1

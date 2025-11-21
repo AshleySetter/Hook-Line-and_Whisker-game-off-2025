@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Arowana
   minFightTime: 1
   maxFightTime: 2
-  reelDistance: 0.7
   fightOnReelChance: 5
   fishWeight: 1
   fishSprite: {fileID: -6670529503220025734, guid: 6ef135852efd5d347b699c9d69aebc52, type: 3}
   reelFrequency: 0.8
+  fishValue: 1

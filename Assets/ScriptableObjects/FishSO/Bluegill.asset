@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Bluegill
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0.5
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: 7018824965595371228, guid: 1753933713dcce845b49680bd197c8ce, type: 3}
   reelFrequency: 1
+  fishValue: 1

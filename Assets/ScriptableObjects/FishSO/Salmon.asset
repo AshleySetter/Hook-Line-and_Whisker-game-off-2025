@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Salmon
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0.5
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: -6967122372230043882, guid: c6ad0335d843c7141a44d28e1bd86d59, type: 3}
   reelFrequency: 0.79
+  fishValue: 2

@@ -15,8 +15,8 @@ MonoBehaviour:
   fishName: Guppy
   minFightTime: 1
   maxFightTime: 4
-  reelDistance: 0.5
   fightOnReelChance: 20
   fishWeight: 1
   fishSprite: {fileID: 4395249411444638742, guid: 096491290cc8ea14c96da44d4ff088d5, type: 3}
   reelFrequency: 0.4
+  fishValue: 1

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class FishBucket : MonoBehaviour, FishContainer
 {
     public static FishBucket Instance { get; private set; }
+    public event Action OnFishCountChanged;
     [SerializeField] private AudioClip coinGet;
     private List<FishSO> fishInBucket;
     private bool withinInteractDistance;
@@ -50,6 +52,7 @@ public class FishBucket : MonoBehaviour, FishContainer
     public void AddFish(FishSO fish)
     {
         fishInBucket.Add(fish);
+        OnFishCountChanged?.Invoke();
     }
 
     public void TakeAllFish(FishContainer newContainer)
@@ -59,22 +62,27 @@ public class FishBucket : MonoBehaviour, FishContainer
         for (int i = 0; i < fishes.Length; i++)
         {
             int indexForCallbacks = i;
+            FishSO fishForCallbacks = fishes[i];
             if (newContainer.IsFull())
             {
                 break;
             }
-            newContainer.AddFish(fishes[i]);
             if (newContainer is FishMarket)
             {
                 StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.5f, () =>
                 {
                     // play fish transfer visual / sound fx
                     SoundFXManager.Instance.PlaySoundFXClip(coinGet, this.transform, 1, 1 + 0.5f * indexForCallbacks);
+                    newContainer.AddFish(fishForCallbacks);
                 }));
+            } else
+            {
+                newContainer.AddFish(fishes[i]);
             }
             fishRemoved++;
         }
         fishInBucket.RemoveRange(0, fishRemoved);
+        OnFishCountChanged?.Invoke();
     }
 
     public void TakeFish(FishContainer newContainer)
@@ -84,6 +92,7 @@ public class FishBucket : MonoBehaviour, FishContainer
             FishSO fishTaken = fishInBucket[fishIndexTaken];
             fishInBucket.RemoveAt(fishIndexTaken);
             newContainer.AddFish(fishTaken);
+            OnFishCountChanged?.Invoke();
         } else
         {
             Debug.LogError("Tried to take fish from empty fish bucket");

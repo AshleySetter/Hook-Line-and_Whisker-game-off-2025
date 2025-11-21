@@ -19,3 +19,4 @@ MonoBehaviour:
   fishWeight: 1
   fishSprite: {fileID: 8704251008440363128, guid: d0f175227feea654b94ae846a98eb627, type: 3}
   reelFrequency: 1.342
+  fishValue: 3
