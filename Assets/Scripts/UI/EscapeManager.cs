@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EscapeManager : MonoBehaviour
 {
     public static EscapeManager Instance { get; private set; }
 
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private Button settingsButton;
     private GameObject activeWindow;
 
     private void Awake()
@@ -16,6 +18,12 @@ public class EscapeManager : MonoBehaviour
     private void Start()
     {
         GameInput.Instance.OnEscapeAction += GameInput_OnEscapeAction;
+        settingsButton.onClick.AddListener(() =>
+        {
+            pauseMenu.SetActive(true);
+            activeWindow = pauseMenu;
+            Time.timeScale = 0f;
+        });
     }
 
     public void SetActiveWindow(GameObject window)
