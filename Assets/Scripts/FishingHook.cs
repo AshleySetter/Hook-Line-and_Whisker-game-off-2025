@@ -284,7 +284,9 @@ public class FishingHook : MonoBehaviour
                 CatchBar.Instance.RemoveFrequency(hookedFish.reelFrequency);
                 break;
             case HookState.Failed:
-                splashingFightingSoundDestroyer();
+                if (splashingFightingSoundDestroyer != null) {
+                    splashingFightingSoundDestroyer();
+                }
                 SetBobberState(BobberState.NotVisible);
                 hookState = HookState.NotFishing;
                 Debug.Log($"You failed to catch a fish");
