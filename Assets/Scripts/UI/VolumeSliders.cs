@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MouseSensitivitySlider : MonoBehaviour
+public class VolumeSliders : MonoBehaviour
 {
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private Slider soundFXVolumeSlider;

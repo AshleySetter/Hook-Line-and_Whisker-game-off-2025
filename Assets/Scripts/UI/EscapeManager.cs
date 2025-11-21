@@ -29,9 +29,12 @@ public class EscapeManager : MonoBehaviour
         {
             activeWindow.SetActive(false);
             activeWindow = null;
+            Time.timeScale = 1f;
         } else
         {
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
+            pauseMenu.SetActive(true);
+            activeWindow = pauseMenu;
+            Time.timeScale = 0f;
         }
     }
 }
