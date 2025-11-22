@@ -27,6 +27,11 @@ public class ReelSuccessRegionUpgrade : MonoBehaviour, UpgradeI
         return $"{GetNextValue()}%";
     }
 
+    public float GetMaxValue()
+    {
+        return 100;
+    }
+
     public void Upgrade()
     {
         CatchBar.Instance.SetReelPercentage(GetNextValue());

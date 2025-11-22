@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour, FishContainer
     public void AddCapacity()
     {
         capacity += 1;
+        OnInventoryChanged?.Invoke();
     }
 
     public int GetNumberOfFish()
@@ -45,8 +46,11 @@ public class Inventory : MonoBehaviour, FishContainer
 
     public void AddFish(FishSO fish)
     {
-        fishInInventory.Add(fish);
-        OnInventoryChanged?.Invoke();
+        if (fishInInventory.Count < capacity) 
+        {
+            fishInInventory.Add(fish);
+            OnInventoryChanged?.Invoke();
+        }
     }
 
     public void TakeAllFish(FishContainer newContainer)

@@ -25,7 +25,10 @@ public class UpgradeButton : MonoBehaviour
         RefreshUI();
         upgradeButton.onClick.AddListener(() =>
         {
-            if (upgrade.GetCost() <= FishMarket.Instance.GetCoins()) {
+            if (
+                upgrade.GetCost() <= FishMarket.Instance.GetCoins() &&
+                upgrade.GetCurrentValue() < upgrade.GetMaxValue()
+            ) {
                 // play sound of money spent
                 FishMarket.Instance.RemoveCoins(upgrade.GetCost());
                 upgrade.Upgrade();
@@ -41,6 +44,11 @@ public class UpgradeButton : MonoBehaviour
     {
         cost.text = upgrade.GetCost().ToString();
         currentValue.text = upgrade.GetCurrentValueString();
-        nextValue.text = upgrade.GetNextValueString();
+        if (upgrade.GetCurrentValue() < upgrade.GetMaxValue())
+        {
+            nextValue.text = upgrade.GetNextValueString();
+        } else {
+            nextValue.text = upgrade.GetCurrentValueString();
+        }
     }
 }

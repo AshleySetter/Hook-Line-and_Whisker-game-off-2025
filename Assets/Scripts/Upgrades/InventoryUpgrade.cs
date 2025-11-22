@@ -27,6 +27,11 @@ public class InventoryUpgrade : MonoBehaviour, UpgradeI
         return (Inventory.Instance.GetCapacity() + 1).ToString();
     }
 
+    public float GetMaxValue()
+    {
+        return 10;
+    }
+
     public void Upgrade()
     {
         Inventory.Instance.AddCapacity();

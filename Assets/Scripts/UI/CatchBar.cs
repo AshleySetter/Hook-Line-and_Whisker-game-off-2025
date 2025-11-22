@@ -26,10 +26,6 @@ public class CatchBar : MonoBehaviour
     {
         Instance = this;
         frequencies = new List<float>();
-    }
-
-    private void Start()
-    {
         SetReelPercentage(percentageDebug);
         SetReelBoostPercentage(boostPercentageDebug);
         pause = false;

@@ -27,6 +27,11 @@ public class HookUpgrade : MonoBehaviour, UpgradeI
         return (PlayerFishing.Instance.GetNumberOfHooks() + 1).ToString();
     }
 
+    public float GetMaxValue()
+    {
+        return 10;
+    }
+
     public void Upgrade()
     {
         PlayerFishing.Instance.AddFishingHook();

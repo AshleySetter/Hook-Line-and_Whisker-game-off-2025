@@ -18,7 +18,7 @@ public class FishMarket : MonoBehaviour, FishContainer
 
     private void Start()
     {
-        coins = 50;
+        coins = 100;
     }
 
     void OnTriggerEnter2D(Collider2D other)
