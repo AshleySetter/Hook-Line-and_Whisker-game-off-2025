@@ -35,6 +35,16 @@ public class CatchBar : MonoBehaviour
         pause = false;
     }
 
+    public float GetReelPercentage()
+    {
+        return reelPercentage;
+    }
+
+    public float GetReelBoostPercentage() 
+    {
+        return reelBoostPercentage;
+    }
+
     public void SetReelPercentage(float reelPercentage)
     {
         CatchBarLeft.fillAmount = (100 - reelPercentage) / 100 / 2;

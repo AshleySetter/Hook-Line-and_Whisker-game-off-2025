@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour, FishContainer
 {
     public static Inventory Instance { get; private set; }
     private List<FishSO> fishInInventory;
-    private int capacity = 5;
+    private int capacity = 1;
     [SerializeField] private AudioClip fishTransferSound;
     [SerializeField] private AudioClip coinSound;
     public event Action OnInventoryChanged;
@@ -16,6 +16,16 @@ public class Inventory : MonoBehaviour, FishContainer
     {
         Instance = this;
         fishInInventory = new List<FishSO>();
+    }
+
+    public int GetCapacity()
+    {
+        return capacity;
+    }
+
+    public void AddCapacity()
+    {
+        capacity += 1;
     }
 
     public int GetNumberOfFish()

@@ -22,7 +22,7 @@ public class PlayerFishing : MonoBehaviour
     private int numberOfHooks; // can be upgraded
     private float reelDistance; // can be upgraded
     private List<FishingHook> fishingHooks;
-    private int initialNumberOfHooks = 2;
+    private int initialNumberOfHooks = 1;
 
 
     public enum FishingState

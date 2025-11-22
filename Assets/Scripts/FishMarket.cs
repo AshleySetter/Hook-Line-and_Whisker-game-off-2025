@@ -6,6 +6,7 @@ public class FishMarket : MonoBehaviour, FishContainer
     public static FishMarket Instance { get; private set; }
 
     public event Action OnCoinsChanged;
+    [SerializeField] private AudioClip coinSound;
     private int coins;
     private FishSO[] fish;
     private bool withinInteractDistance;
@@ -17,7 +18,7 @@ public class FishMarket : MonoBehaviour, FishContainer
 
     private void Start()
     {
-        coins = 0;
+        coins = 50;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -44,6 +45,20 @@ public class FishMarket : MonoBehaviour, FishContainer
     public int GetCoins()
     {
         return coins;
+    }
+
+    public void RemoveCoins(int removed)
+    {
+        coins -= removed;
+        OnCoinsChanged?.Invoke();
+        for (int i = 0; i < removed; i++)
+        {
+            int indexForCallbacks = i;
+            StartCoroutine(DoAfterDelayUtility.DoAfterDelay(i * 0.2f, () =>
+            {
+                SoundFXManager.Instance.PlaySoundFXClip(coinSound, this.transform, 1, 1 - 0.5f * indexForCallbacks);
+            }));
+        }
     }
 
     public void AddFish(FishSO fish)

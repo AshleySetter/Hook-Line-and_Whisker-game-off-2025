@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI interactText;
+    [SerializeField] private GameObject shopUI;
     private float stealCooldown = 1f;
     private float stealCooldownTimer;
 
@@ -17,7 +18,8 @@ public class PlayerInteraction : MonoBehaviour
         StartFishing,
         StopFishing,
         StealFromCat,
-        TakeFishFromMarket
+        DropInventoryFishAtMarket,
+        BuyFromMarket
     }
 
 
@@ -42,7 +44,8 @@ public class PlayerInteraction : MonoBehaviour
         {
             InteractActionType.PutDownBucket => "Put Down Bucket",
             InteractActionType.DropFishAtMarket => "Sell Fish",
-            InteractActionType.TakeFishFromMarket => "Take Fish",
+            InteractActionType.DropInventoryFishAtMarket => "Sell Fish",
+            InteractActionType.BuyFromMarket => "Buy from Market",
             InteractActionType.StartFishing => "Start Fishing",
             InteractActionType.StopFishing => "",
             InteractActionType.PickUpBucket => "Pick Up Bucket",
@@ -70,7 +73,15 @@ public class PlayerInteraction : MonoBehaviour
 
         // Not holding bucket
         if (FishMarket.Instance.GetWithinInteractDistance())
-            return InteractActionType.TakeFishFromMarket;
+            // if have fish
+            if (Inventory.Instance.GetNumberOfFish() > 0)
+            {
+                return InteractActionType.DropInventoryFishAtMarket;
+            }
+            else
+            {
+                return InteractActionType.BuyFromMarket;
+            }
 
         // Fishing logic
         if (PlayerFishing.Instance.IsFishingAllowed() && 
@@ -113,8 +124,13 @@ public class PlayerInteraction : MonoBehaviour
                 FishBucket.Instance.TakeAllFish(FishMarket.Instance);
                 break;
 
-            case InteractActionType.TakeFishFromMarket:
+            case InteractActionType.DropInventoryFishAtMarket:
                 Inventory.Instance.TakeAllFish(FishMarket.Instance);
+                break;
+
+            case InteractActionType.BuyFromMarket:
+                shopUI.SetActive(true);
+                EscapeManager.Instance.SetActiveWindow(shopUI);
                 break;
 
             case InteractActionType.StartFishing:

@@ -793,7 +793,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_30
+      name: 1
       rect:
         serializedVersion: 2
         x: 64
@@ -815,7 +815,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_31
+      name: 2
       rect:
         serializedVersion: 2
         x: 80
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_32
+      name: 3
       rect:
         serializedVersion: 2
         x: 96
@@ -1079,7 +1079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_45
+      name: 4
       rect:
         serializedVersion: 2
         x: 64
@@ -1101,7 +1101,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_46
+      name: 5
       rect:
         serializedVersion: 2
         x: 80
@@ -1123,7 +1123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_47
+      name: 6
       rect:
         serializedVersion: 2
         x: 96
@@ -1365,7 +1365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_60
+      name: 7
       rect:
         serializedVersion: 2
         x: 64
@@ -1387,7 +1387,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_61
+      name: 8
       rect:
         serializedVersion: 2
         x: 80
@@ -1409,7 +1409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: free_modified_62
+      name: 9
       rect:
         serializedVersion: 2
         x: 96
@@ -2238,6 +2238,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      1: 1035353023758517793
+      2: -3567352883991045263
+      3: -8334773069658230399
+      4: -4738448502705152469
+      5: -3671109563682253908
+      6: 2766864355677494709
+      7: -6754168002792972045
+      8: 235979957723372160
+      9: -4864163445839318993
       UI panel hard: -1950008410
       UI panel rounded: -251872417
       free_modified_0: -5263703436198157778
@@ -2278,9 +2287,6 @@ TextureImporter:
       free_modified_28: -3387379518941148065
       free_modified_29: -2172114274808015785
       free_modified_3: -480142436684946102
-      free_modified_30: 1035353023758517793
-      free_modified_31: -3567352883991045263
-      free_modified_32: -8334773069658230399
       free_modified_33: -2954730172957831216
       free_modified_34: -6145545700978868288
       free_modified_35: -8197201987009760556
@@ -2294,9 +2300,6 @@ TextureImporter:
       free_modified_42: 1043001118519191529
       free_modified_43: -967426252131448046
       free_modified_44: -3500591026285124194
-      free_modified_45: -4738448502705152469
-      free_modified_46: -3671109563682253908
-      free_modified_47: 2766864355677494709
       free_modified_48: -3301699762209397211
       free_modified_49: -2866472222571645662
       free_modified_5: 6795528183598772212
@@ -2311,9 +2314,6 @@ TextureImporter:
       free_modified_58: -8979880658811224132
       free_modified_59: 2673701148596397453
       free_modified_6: -2934518766399474179
-      free_modified_60: -6754168002792972045
-      free_modified_61: 235979957723372160
-      free_modified_62: -4864163445839318993
       free_modified_63: 6727753595315289386
       free_modified_64: 8230384882402384386
       free_modified_65: 443167190171272001
