@@ -64,6 +64,7 @@ public class FishMarket : MonoBehaviour, FishContainer
     public void AddFish(FishSO fish)
     {
         coins += fish.fishValue;
+        EndRunScreen.Instance.AddToCoinsCollected(fish.fishValue);
         OnCoinsChanged?.Invoke();
     }
 

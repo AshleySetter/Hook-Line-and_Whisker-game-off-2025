@@ -32,6 +32,7 @@ public class UpgradeButton : MonoBehaviour
                 // play sound of money spent
                 FishMarket.Instance.RemoveCoins(upgrade.GetCost());
                 upgrade.Upgrade();
+                EndRunScreen.Instance.AddToUpgradesBought(1);
                 RefreshUI();
             } else
             {

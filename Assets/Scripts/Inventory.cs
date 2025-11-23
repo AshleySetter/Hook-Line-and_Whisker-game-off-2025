@@ -49,6 +49,7 @@ public class Inventory : MonoBehaviour, FishContainer
         if (fishInInventory.Count < capacity) 
         {
             fishInInventory.Add(fish);
+            EndRunScreen.Instance.AddToFishCaught(1);
             OnInventoryChanged?.Invoke();
         }
     }

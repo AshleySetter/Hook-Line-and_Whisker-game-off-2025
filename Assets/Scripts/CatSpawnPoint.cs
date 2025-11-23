@@ -37,6 +37,7 @@ public class CatSpawnPoint : MonoBehaviour
         {
             if (cat.IsFull()) {
                 Destroy(cat.gameObject);
+                EndRunScreen.Instance.AddToFishStolen(1);
             }
             else if (DayNightTimer.Instance.GetDayFinished())
             {
