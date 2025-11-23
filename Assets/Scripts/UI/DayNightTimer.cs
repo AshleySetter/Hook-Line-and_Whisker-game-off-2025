@@ -5,29 +5,51 @@ using UnityEngine.UI;
 
 public class DayNightTimer : MonoBehaviour
 {
+    public static DayNightTimer Instance {get; private set; }
     [SerializeField] private Image dayTimerImage;
     [SerializeField] private Volume GlobalVolume;
     private float minFillAmount = 0.150f;
     private float maxFillAmount = 0.850f;
-    private float secondsInADay = 100;
-    private bool dayTimerStarted;
+    private float secondsInADay = 10;
+    private bool dayStarted;
     private float dayTimer;
+    private bool dayFinished;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
-        dayTimerStarted = false;
-        StartDayTimer();
+        dayStarted = false;
+        dayFinished = false;
+        UpdateDayTimerVisual();
+        UpdateLighting();
     }
 
-    void Update()
+    private void Update()
     {
-        if (dayTimerStarted && dayTimer <= secondsInADay)
+        if (GetDayActive())
         {
             UpdateDayTimerVisual();
             UpdateLighting();
+            dayTimer += Time.deltaTime;
         }
-        dayTimer += Time.deltaTime;
-        
+        if (dayTimer > secondsInADay)
+        {
+            dayFinished = true;
+        }
+    }
+
+    public bool GetDayActive()
+    {
+        return dayStarted && !dayFinished;
+    }
+
+    public bool GetDayFinished()
+    {
+        return dayFinished;
     }
 
     private void UpdateDayTimerVisual()
@@ -48,7 +70,6 @@ public class DayNightTimer : MonoBehaviour
             if (isEvening) {
                 eveningFraction = (dayTimer - secondsDuringDaytime) / secondsInAnEvening;
             }
-            Debug.Log($"{dayTimer} {secondsDuringDaytime} {eveningFraction} {secondsInADay}");
             colorAdjustments.postExposure.value = 0f - 1.5f * eveningFraction;
             colorAdjustments.saturation.value = 0f - 15 * eveningFraction;
             Vector4 rgba = new Vector4(1f, 1f - 0.5f * eveningFraction, 1f - 0.5f * eveningFraction, 1f);
@@ -61,14 +82,18 @@ public class DayNightTimer : MonoBehaviour
         dayTimer = 0;
     }
 
-    public void StartDayTimer()
+    public void StartDay()
     {
-        dayTimer = 0;
-        dayTimerStarted = true;
+        dayStarted = true;
+    }
+
+    public void StopDayTimer()
+    {
+        dayStarted = false;
     }
 
     public bool GetDayTimerStarted()
     {
-        return dayTimerStarted;
+        return dayStarted;
     }
 }

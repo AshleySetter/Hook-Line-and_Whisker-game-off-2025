@@ -26,7 +26,7 @@ public class UpgradeButton : MonoBehaviour
         upgradeButton.onClick.AddListener(() =>
         {
             if (
-                upgrade.GetCost() <= FishMarket.Instance.GetCoins() &&
+                upgrade.GetCost() <= (FishMarket.Instance.GetCoins() - GameManager.Instance.GetBills()) &&
                 upgrade.GetCurrentValue() < upgrade.GetMaxValue()
             ) {
                 // play sound of money spent
