@@ -42,6 +42,7 @@ public class FishingHook : MonoBehaviour
     private GameObject fishShadow;
     private GameObject fishingLine;
     private Action splashingFightingSoundDestroyer;
+    private Action frequencyRemover;
 
     public enum HookState
     {
@@ -97,6 +98,13 @@ public class FishingHook : MonoBehaviour
     {
         SetBobberState(BobberState.NotVisible);
         hookState = HookState.NotFishing;
+        if (splashingFightingSoundDestroyer != null) {
+            splashingFightingSoundDestroyer();
+        }
+        if (frequencyRemover != null)
+        {
+            frequencyRemover();
+        }
     }
 
     private void SetBobberState(BobberState bobberState)
@@ -257,6 +265,11 @@ public class FishingHook : MonoBehaviour
                     hookedFish = fishes[UnityEngine.Random.Range(0, fishes.Length)];
                     Debug.Log($"hooked fish: {hookedFish}");
                     CatchBar.Instance.AddFrequency(hookedFish.reelFrequency);
+                    frequencyRemover = () =>
+                    {
+                        CatchBar.Instance.RemoveFrequency(hookedFish.reelFrequency);
+                        frequencyRemover = null;
+                    };
                     StartFighting();
                     CatchBar.Instance.gameObject.SetActive(true);
                 }
@@ -281,7 +294,10 @@ public class FishingHook : MonoBehaviour
                 // CatchDisplay.Instance.SetActive();
                 Inventory.Instance.AddFish(hookedFish);
                 hookState = HookState.NotFishing;
-                CatchBar.Instance.RemoveFrequency(hookedFish.reelFrequency);
+                if (frequencyRemover != null)
+                {
+                    frequencyRemover();
+                }
                 break;
             case HookState.Failed:
                 if (splashingFightingSoundDestroyer != null) {
@@ -291,9 +307,9 @@ public class FishingHook : MonoBehaviour
                 hookState = HookState.NotFishing;
                 Debug.Log($"You failed to catch a fish");
                 Debug.Log($"{CatchBar.Instance}, {hookedFish}");
-                if (hookedFish != null)
+                if (frequencyRemover != null)
                 {
-                    CatchBar.Instance.RemoveFrequency(hookedFish.reelFrequency);
+                    frequencyRemover();
                 }
                 hookedFish = null;
                 hookState = HookState.AfterFailed;
