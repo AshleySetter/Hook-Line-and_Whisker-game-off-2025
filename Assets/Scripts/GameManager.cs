@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         day = 0;
-        endRunScreen.SetActive(false);
+        // endRunScreen.SetActive(false);
     }
 
     private void Start()

@@ -12,6 +12,9 @@ public class EndRunScreen : MonoBehaviour
     [SerializeField] private TextMeshProUGUI coinsCollectedCounter;
     [SerializeField] private TextMeshProUGUI upgradesBoughtCounter;
 
+    [SerializeField] private UnityEngine.UI.Button playAgainButton;
+    [SerializeField] private UnityEngine.UI.Button mainMenuButton;
+
     private int daysSurvived;
     private int fishCaught;
     private int fishStolen;
@@ -26,6 +29,18 @@ public class EndRunScreen : MonoBehaviour
         fishStolen = 0;
         coinsCollected = 0;
         upgradesBought = 0;
+
+        playAgainButton.onClick.AddListener(() =>
+        {
+            Loader.Load(Loader.Scene.GameScene);
+        });
+
+        mainMenuButton.onClick.AddListener(() =>
+        {
+            Loader.Load(Loader.Scene.MainMenuScene);
+        });
+
+        Time.timeScale = 1f;
     }
 
     private void Update()
