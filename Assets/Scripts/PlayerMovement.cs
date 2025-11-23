@@ -3,12 +3,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement Instance { get; private set; }
+    [SerializeField] private GameObject player;
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject visual;
     [SerializeField] private GameObject bucketCarryPoint;
 
     private float walkSpeed = 3;
+    private Vector3 outsideFrontDoorPosition = new Vector3(3.63f, 0.37f, 0f);
     private bool facingRight;
     private Vector3 facingVector;
 
@@ -73,6 +75,14 @@ public class PlayerMovement : MonoBehaviour
             facingVector = new Vector3(0, -1, 0);
             bucketCarryPoint.transform.localPosition = Vector3.zero;
         }
+    }
+
+    public void MovePlayerToFrontDoor()
+    {
+        player.transform.position = outsideFrontDoorPosition;
+        animator.SetBool("FacingSideways", false);
+        animator.SetBool("FacingAway", false);
+        animator.SetBool("FacingCamera", true);
     }
 
     public GameObject GetVisual()

@@ -10,12 +10,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        day = 0;
     }
 
     private void Start()
     {
-        day = 1;
-        coinsNeededForBills = 3;
+        ProgressToNextDay();
+        coinsNeededForBills = 2;
     }
 
     private void Update()
@@ -55,15 +56,27 @@ public class GameManager : MonoBehaviour
         day += 1;
         DayNightTimer.Instance.StopDayTimer();
         DayNightTimer.Instance.ResetDayTimer();
+        DayNightTimer.Instance.UpdateVisuals();
         coinsNeededForBills *= 2;
+
         // get / generate cat spawn schedule for the day
+
         // put player outside home with bucket equipped
+        if (!FishBucket.Instance.IsHeldByPlayer()) {
+            FishBucket.Instance.PickUp();
+        }
+        PlayerMovement.Instance.MovePlayerToFrontDoor();
     }
 
     public void FinishDay()
     {
-        // check if player has enough coins to afford bills / rent
-        // if so progress to next day
-        // else display end of run screen with exit to main menu button and start another run button
+        if (FishMarket.Instance.GetCoins() >= coinsNeededForBills)
+        {
+            FishMarket.Instance.RemoveCoins(coinsNeededForBills);
+            ProgressToNextDay();
+        } else
+        {
+            // display end of run screen with exit to main menu button and start another run button   
+        }
     }
 }

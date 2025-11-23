@@ -19,7 +19,8 @@ public class PlayerInteraction : MonoBehaviour
         StopFishing,
         StealFromCat,
         DropInventoryFishAtMarket,
-        BuyFromMarket
+        BuyFromMarket,
+        GoToBed,
     }
 
 
@@ -51,6 +52,7 @@ public class PlayerInteraction : MonoBehaviour
             InteractActionType.PickUpBucket => "Pick Up Bucket",
             InteractActionType.PutFishInBucket => "Put Fish in Bucket",
             InteractActionType.StealFromCat => "Steal Fish",
+            InteractActionType.GoToBed => "Go to Bed",
             _ => ""
         };
         String interactText = "";
@@ -109,6 +111,11 @@ public class PlayerInteraction : MonoBehaviour
             stealCooldownTimer <= 0)
             return InteractActionType.StealFromCat;
 
+        if (PlayerHome.Instance.GetWithinInteractDistance() && DayNightTimer.Instance.GetDayFinished())
+        {
+            return InteractActionType.GoToBed;
+        }
+
         return InteractActionType.None;
     }
     
@@ -153,6 +160,10 @@ public class PlayerInteraction : MonoBehaviour
                 CatAIController closestCat = GetClosestCat(this.transform);
                 closestCat.TakeAllFish(Inventory.Instance);
                 stealCooldownTimer = stealCooldown;
+                break;
+
+            case InteractActionType.GoToBed:
+                GameManager.Instance.FinishDay();
                 break;
 
             case InteractActionType.None:

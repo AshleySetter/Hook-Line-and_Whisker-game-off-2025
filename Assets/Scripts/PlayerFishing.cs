@@ -54,7 +54,7 @@ public class PlayerFishing : MonoBehaviour
     {
         // only allow when next to and facing water
         // and when during the fishing part of the day
-        return IsFacingWater() && DayNightTimer.Instance.GetDayActive();
+        return IsFacingWater() && !DayNightTimer.Instance.GetDayFinished();
     }
 
     public bool GetIsFishing()

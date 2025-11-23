@@ -24,6 +24,11 @@ public class DayNightTimer : MonoBehaviour
     {
         dayStarted = false;
         dayFinished = false;
+        UpdateVisuals();
+    }
+
+    public void UpdateVisuals()
+    {
         UpdateDayTimerVisual();
         UpdateLighting();
     }
@@ -80,6 +85,8 @@ public class DayNightTimer : MonoBehaviour
     public void ResetDayTimer()
     {
         dayTimer = 0;
+        dayStarted = false;
+        dayFinished = false;
     }
 
     public void StartDay()
