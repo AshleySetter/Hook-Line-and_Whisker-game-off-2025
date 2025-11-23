@@ -13,7 +13,6 @@ public class PlayerHome : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("trigger enter");
         if (other.TryGetComponent(out PlayerMovement player))
         {
             withinInteractDistance = true;
@@ -22,7 +21,6 @@ public class PlayerHome : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("trigger exit");
         if (other.TryGetComponent(out PlayerMovement player))
         {
             withinInteractDistance = false;

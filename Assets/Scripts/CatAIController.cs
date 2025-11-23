@@ -54,6 +54,11 @@ public class CatAIController : MonoBehaviour, FishContainer
             // go back home with fish
             destination = spawnPoint;
         }
+        if (DayNightTimer.Instance.GetDayFinished())
+        {
+            // go back home at end of day
+            destination = spawnPoint;
+        }
 
         agent.SetDestination(destination);
         HandleMovementAnimation();
@@ -85,7 +90,7 @@ public class CatAIController : MonoBehaviour, FishContainer
                     stealCooldownTimer = stealCooldown; // when they steal fish - start cooldown
                 }
             }
-            if (other.TryGetComponent(out FishBucket bucket))
+            if (other.TryGetComponent(out FishBucket bucket) && bucket.GetNumberOfFish() > 0)
             {
                 bucket.TakeFish(this);
             }

@@ -27,17 +27,8 @@ public class GameManager : MonoBehaviour
             !DayNightTimer.Instance.GetDayFinished()
             ) 
         {
-           DayNightTimer.Instance.StartDay(); 
-        }
-        if (DayNightTimer.Instance.GetDayActive())
-        {
-            // spawn cats according to schedule
-        } else
-        {
-            if (DayNightTimer.Instance.GetDayFinished())
-            {
-                // tell cats to go home without fish
-            }
+           DayNightTimer.Instance.StartDay();
+           CatSpawnScheduler.Instance.StartSpawning();
         }
     }
 
@@ -60,6 +51,7 @@ public class GameManager : MonoBehaviour
         coinsNeededForBills *= 2;
 
         // get / generate cat spawn schedule for the day
+        CatSpawnScheduler.Instance.GenerateSpawnSchedule(day * day / 2 - 1); 
 
         // put player outside home with bucket equipped
         if (!FishBucket.Instance.IsHeldByPlayer()) {

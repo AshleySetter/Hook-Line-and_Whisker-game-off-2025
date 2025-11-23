@@ -38,6 +38,10 @@ public class CatSpawnPoint : MonoBehaviour
             if (cat.IsFull()) {
                 Destroy(cat.gameObject);
             }
+            else if (DayNightTimer.Instance.GetDayFinished())
+            {
+                Destroy(cat.gameObject);
+            }
         }
     }
 }

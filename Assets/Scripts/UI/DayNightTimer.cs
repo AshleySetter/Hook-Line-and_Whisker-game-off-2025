@@ -10,7 +10,7 @@ public class DayNightTimer : MonoBehaviour
     [SerializeField] private Volume GlobalVolume;
     private float minFillAmount = 0.150f;
     private float maxFillAmount = 0.850f;
-    private float secondsInADay = 10;
+    private float secondsInADay = 120;
     private bool dayStarted;
     private float dayTimer;
     private bool dayFinished;
@@ -45,6 +45,11 @@ public class DayNightTimer : MonoBehaviour
         {
             dayFinished = true;
         }
+    }
+
+    public float GetSecondsInADay()
+    {
+        return secondsInADay;
     }
 
     public bool GetDayActive()
