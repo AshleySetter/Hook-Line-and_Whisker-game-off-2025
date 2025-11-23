@@ -14,6 +14,7 @@ public class CatAIController : MonoBehaviour, FishContainer
     [SerializeField] SpriteLibraryAsset[] catSpriteLibraryAssets;
 
     private FishSO fish;
+    private bool hasStolenFish;
     private Vector3 spawnPoint;
     private bool facingRight;
     NavMeshAgent agent;
@@ -33,12 +34,13 @@ public class CatAIController : MonoBehaviour, FishContainer
         fishVisual.SetActive(false);
         spriteLibrary.spriteLibraryAsset = catSpriteLibraryAssets[UnityEngine.Random.Range(0, catSpriteLibraryAssets.Length)];
         withinInteractDistance = false;
+        hasStolenFish = false;
     }
 
     private void Update()
     {
         Vector3 destination = transform.position;
-        if (fish == null)
+        if (!hasStolenFish)
         {
             if (FishBucket.Instance.GetNumberOfFish() > 0)
             {
@@ -165,6 +167,7 @@ public class CatAIController : MonoBehaviour, FishContainer
     {
         this.fish = fish;
         fishVisual.SetActive(true);
+        hasStolenFish = true;
     }
 
     public void TakeAllFish(FishContainer newContainer)

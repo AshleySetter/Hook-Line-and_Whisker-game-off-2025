@@ -4,7 +4,7 @@ public class ReelSuccessRegionUpgrade : MonoBehaviour, UpgradeI
 {
     public int GetCost()
     {
-        return Mathf.FloorToInt(GetNextValue() / 4);
+        return Mathf.FloorToInt(GetNextValue() / 15);
     }
 
     public float GetCurrentValue()

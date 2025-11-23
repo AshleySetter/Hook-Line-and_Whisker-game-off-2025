@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ProgressToNextDay();
-        coinsNeededForBills = 2;
+        coinsNeededForBills = 1;
     }
 
     private void Update()
@@ -51,10 +51,10 @@ public class GameManager : MonoBehaviour
         DayNightTimer.Instance.StopDayTimer();
         DayNightTimer.Instance.ResetDayTimer();
         DayNightTimer.Instance.UpdateVisuals();
-        coinsNeededForBills += 2;
+        coinsNeededForBills += 1;
 
         // get / generate cat spawn schedule for the day
-        CatSpawnScheduler.Instance.GenerateSpawnSchedule(day * day / 2 - 1); 
+        CatSpawnScheduler.Instance.GenerateSpawnSchedule(day * day / 2 - 1);
 
         // put player outside home with bucket equipped
         if (!FishBucket.Instance.IsHeldByPlayer()) {

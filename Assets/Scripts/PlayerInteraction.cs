@@ -69,8 +69,9 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (FishMarket.Instance.GetWithinInteractDistance())
                 return InteractActionType.DropFishAtMarket;
-
-            return InteractActionType.PutDownBucket;
+            if (!PlayerFishing.Instance.IsFacingWater()) {
+                return InteractActionType.PutDownBucket;
+            }
         }
 
         // Not holding bucket
@@ -158,8 +159,10 @@ public class PlayerInteraction : MonoBehaviour
 
             case InteractActionType.StealFromCat:
                 CatAIController closestCat = GetClosestCat(this.transform);
-                closestCat.TakeAllFish(Inventory.Instance);
-                stealCooldownTimer = stealCooldown;
+                if (!Inventory.Instance.IsFull()) {
+                    closestCat.TakeAllFish(Inventory.Instance);
+                    stealCooldownTimer = stealCooldown;
+                }
                 break;
 
             case InteractActionType.GoToBed:
