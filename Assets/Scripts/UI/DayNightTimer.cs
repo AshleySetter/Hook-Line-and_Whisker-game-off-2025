@@ -9,7 +9,7 @@ public class DayNightTimer : MonoBehaviour
     [SerializeField] private Volume GlobalVolume;
     private float minFillAmount = 0.150f;
     private float maxFillAmount = 0.850f;
-    private float secondsInADay = 20;
+    private float secondsInADay = 100;
     private bool dayTimerStarted;
     private float dayTimer;
 
@@ -25,10 +25,6 @@ public class DayNightTimer : MonoBehaviour
         {
             UpdateDayTimerVisual();
             UpdateLighting();
-        }
-        if (dayTimer > secondsInADay)
-        {
-            dayTimer = 0;
         }
         dayTimer += Time.deltaTime;
         
