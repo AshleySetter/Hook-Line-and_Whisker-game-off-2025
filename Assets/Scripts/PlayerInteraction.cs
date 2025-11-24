@@ -46,7 +46,6 @@ public class PlayerInteraction : MonoBehaviour
         Vector3 inFrontOfPlayer = PlayerMovement.Instance.GetPositionInFrontOfPlayer(2);
         Vector3Int tileMapCell = groundTileMap.WorldToCell(inFrontOfPlayer);
         TileBase tileInFrontOfPlayer = groundTileMap.GetTile(tileMapCell);
-        Debug.Log(tileInFrontOfPlayer);
         return tileInFrontOfPlayer != null;
     }
 
@@ -75,8 +74,6 @@ public class PlayerInteraction : MonoBehaviour
 
     private InteractActionType GetInteractAction()
     {
-        Debug.Log($"facing water? {PlayerFishing.Instance.IsFacingWater()}");
-
         // Bucket is held
         if (FishBucket.Instance.IsHeldByPlayer())
         {

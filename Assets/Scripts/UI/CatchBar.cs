@@ -84,7 +84,6 @@ public class CatchBar : MonoBehaviour
 
     public void RemoveFrequency(float frequency)
     {
-        Debug.Log($"frequencies: {frequencies}");
         frequencies.Remove(frequency);
     }
 
