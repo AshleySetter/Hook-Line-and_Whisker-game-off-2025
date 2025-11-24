@@ -10,7 +10,6 @@ public class CatchBarWarning : MonoBehaviour
         active = false;
         foreach (var hook in FishingHook.AllHooks)
         {
-            Debug.Log(hook.GetHookState());
             if (hook.GetHookState() == FishingHook.HookState.Fighting)
             {
                 active = true;
