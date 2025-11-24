@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Tweens;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.Tilemaps;
 
 public class FishingHook : MonoBehaviour
 {
+    public static readonly List<FishingHook> AllHooks = new();
     [SerializeField] private GameObject waterRipplesPrefab;
     [SerializeField] private GameObject waterSplashPrefab;
     [SerializeField] private GameObject fishShadowPrefab;
@@ -66,6 +68,7 @@ public class FishingHook : MonoBehaviour
 
     private void Start()
     {
+        AllHooks.Add(this);
         waterRipples = Instantiate(waterRipplesPrefab, PlayerMovement.Instance.transform);
         waterSplash = Instantiate(waterSplashPrefab, PlayerMovement.Instance.transform);
         fishShadow = Instantiate(fishShadowPrefab, PlayerMovement.Instance.transform);
