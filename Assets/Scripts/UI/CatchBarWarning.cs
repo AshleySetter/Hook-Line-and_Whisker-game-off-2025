@@ -16,7 +16,11 @@ public class CatchBarWarning : MonoBehaviour
                 active = true;
             }
         }
-        if (!catchBarWarning.activeSelf) {
+        if (!catchBarWarning.activeSelf && active) {
+            catchBarWarning.SetActive(active);
+        }
+        if (catchBarWarning.activeSelf && !active)
+        {
             catchBarWarning.SetActive(active);
         }
     }
