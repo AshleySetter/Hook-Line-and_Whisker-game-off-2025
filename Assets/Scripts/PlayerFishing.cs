@@ -44,7 +44,7 @@ public class PlayerFishing : MonoBehaviour
 
     public bool IsFacingWater()
     {
-        Vector3 inFrontOfPlayer = PlayerMovement.Instance.GetPositionInFrontOfPlayer();
+        Vector3 inFrontOfPlayer = PlayerMovement.Instance.GetPositionInFrontOfPlayer(1.5f);
         Vector3Int tileMapCell = waterTileMap.WorldToCell(inFrontOfPlayer);
         TileBase tileInFrontOfPlayer = waterTileMap.GetTile(tileMapCell);
         return tileInFrontOfPlayer == waterTileBase;
@@ -54,6 +54,7 @@ public class PlayerFishing : MonoBehaviour
     {
         // only allow when next to and facing water
         // and when during the fishing part of the day
+        Debug.Log($"IsFacingWater() in playerFishing {IsFacingWater()}");
         return IsFacingWater() && !DayNightTimer.Instance.GetDayFinished();
     }
 

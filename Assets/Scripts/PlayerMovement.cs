@@ -106,9 +106,9 @@ public class PlayerMovement : MonoBehaviour
         visual.transform.localScale = new Vector3(visual.transform.localScale.x * -1, visual.transform.localScale.y, visual.transform.localScale.z);
     }
     
-    public Vector3 GetPositionInFrontOfPlayer()
+    public Vector3 GetPositionInFrontOfPlayer(float distance = 1)
     {
-        Vector3 inFrontOfPlayer = this.transform.position + GetFacingVector();
+        Vector3 inFrontOfPlayer = this.transform.position + distance * GetFacingVector();
         return inFrontOfPlayer;
     }
 }

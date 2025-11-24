@@ -1,11 +1,13 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private GameObject shopUI;
+    [SerializeField] private Tilemap groundTileMap;
     private float stealCooldown = 1f;
     private float stealCooldownTimer;
 
@@ -39,6 +41,15 @@ public class PlayerInteraction : MonoBehaviour
         interactText.text = GetActionDisplayName(action);
     }
 
+    public bool IsFacingGroundTile()
+    {
+        Vector3 inFrontOfPlayer = PlayerMovement.Instance.GetPositionInFrontOfPlayer(2);
+        Vector3Int tileMapCell = groundTileMap.WorldToCell(inFrontOfPlayer);
+        TileBase tileInFrontOfPlayer = groundTileMap.GetTile(tileMapCell);
+        Debug.Log(tileInFrontOfPlayer);
+        return tileInFrontOfPlayer != null;
+    }
+
     private string GetActionDisplayName(InteractActionType action)
     {
         String actionText = action switch
@@ -64,13 +75,29 @@ public class PlayerInteraction : MonoBehaviour
 
     private InteractActionType GetInteractAction()
     {
+        Debug.Log($"facing water? {PlayerFishing.Instance.IsFacingWater()}");
+
         // Bucket is held
         if (FishBucket.Instance.IsHeldByPlayer())
         {
             if (FishMarket.Instance.GetWithinInteractDistance())
-                return InteractActionType.DropFishAtMarket;
-            if (!PlayerFishing.Instance.IsFacingWater()) {
-                return InteractActionType.PutDownBucket;
+                if (FishBucket.Instance.GetNumberOfFish() > 0) {
+                    return InteractActionType.DropFishAtMarket;
+                } else
+                {
+                    return InteractActionType.BuyFromMarket;
+                }
+            if (PlayerFishing.Instance.IsFacingWater()) {
+                return InteractActionType.None;
+            } else
+            {
+                if (PlayerHome.Instance.GetWithinInteractDistance() && DayNightTimer.Instance.GetDayFinished())
+                {
+                    return InteractActionType.GoToBed;
+                }
+                if (IsFacingGroundTile()) {
+                    return InteractActionType.PutDownBucket;
+                }
             }
         }
 
