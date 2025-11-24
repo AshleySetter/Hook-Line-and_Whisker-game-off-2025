@@ -18,5 +18,5 @@ MonoBehaviour:
   fightOnReelChance: 5
   fishWeight: 1
   fishSprite: {fileID: -6670529503220025734, guid: 6ef135852efd5d347b699c9d69aebc52, type: 3}
-  reelFrequency: 0.8
+  reelFrequency: 0.38
   fishValue: 1
