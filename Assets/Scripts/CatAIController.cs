@@ -70,6 +70,11 @@ public class CatAIController : MonoBehaviour, FishContainer
         }
     }
 
+    public bool GetHasStolenFish()
+    {
+        return hasStolenFish;
+    }
+
     public bool GetWithinInteractDistance()
     {
         return withinInteractDistance;

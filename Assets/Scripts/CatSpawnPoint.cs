@@ -35,11 +35,22 @@ public class CatSpawnPoint : MonoBehaviour
     {
         if (other.TryGetComponent(out CatAIController cat))
         {
-            if (cat.IsFull()) {
+            if (cat.IsFull() || cat.GetHasStolenFish()) {
                 Destroy(cat.gameObject);
                 EndRunScreen.Instance.AddToFishStolen(1);
             }
             else if (DayNightTimer.Instance.GetDayFinished())
+            {
+                Destroy(cat.gameObject);
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out CatAIController cat))
+        {
+            if (DayNightTimer.Instance.GetDayFinished())
             {
                 Destroy(cat.gameObject);
             }
