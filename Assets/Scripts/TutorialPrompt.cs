@@ -33,7 +33,9 @@ public class TutorialPrompt : MonoBehaviour
 
     private void Start()
     {
-        arrow.SetActive(false);
+        if (arrow != null) {
+            arrow.SetActive(false);
+        }
         shownToPlayer = false;
     }
 
@@ -45,7 +47,9 @@ public class TutorialPrompt : MonoBehaviour
             {
                 tutorialPanel.SetActive(true);
                 tutorialTextBox.text = tutorialText;
-                arrow.SetActive(true);
+                if (arrow != null) {
+                    arrow.SetActive(true);
+                }
                 EscapeManager.Instance.SetActiveWindow(tutorialPanel);
                 if (shouldFreezeTime) {
                     FreezeTime();
@@ -62,7 +66,9 @@ public class TutorialPrompt : MonoBehaviour
             {
                 tutorialPanel.SetActive(false);
                 tutorialTextBox.text = "";
-                arrow.SetActive(false);
+                if (arrow != null) {
+                    arrow.SetActive(false);
+                }
             }
         }
     }
