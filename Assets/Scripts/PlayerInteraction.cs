@@ -23,6 +23,7 @@ public class PlayerInteraction : MonoBehaviour
         DropInventoryFishAtMarket,
         BuyFromMarket,
         GoToBed,
+        UnfreezeTime,
     }
 
 
@@ -74,6 +75,11 @@ public class PlayerInteraction : MonoBehaviour
 
     private InteractActionType GetInteractAction()
     {
+        if (TutorialPrompt.timeFrozen)
+        {
+            return InteractActionType.UnfreezeTime;
+        }
+
         // Bucket is held
         if (FishBucket.Instance.IsHeldByPlayer())
         {
@@ -148,6 +154,9 @@ public class PlayerInteraction : MonoBehaviour
     {
         switch (action)
         {
+            case InteractActionType.UnfreezeTime:
+                TutorialPrompt.UnfreezeTime();
+                break;
             case InteractActionType.PutDownBucket:
                 FishBucket.Instance.PutDown();
                 break;
