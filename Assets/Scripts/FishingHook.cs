@@ -236,6 +236,10 @@ public class FishingHook : MonoBehaviour
 
     private void StartFighting()
     {
+        if (!CatchBarTutorialPrompt.Instance.GetCaughtFish())
+        {
+            CatchBarTutorialPrompt.Instance.Open();
+        }
         splashingFightingSoundDestroyer = SoundFXManager.Instance.PlayLoopingSoundFXClip(splashingFightingFish, this.transform, 0.2f);
         SetBobberState(BobberState.Fighting);
         hookState = HookState.Fighting;
@@ -301,6 +305,7 @@ public class FishingHook : MonoBehaviour
                 {
                     frequencyRemover();
                 }
+                CatchBarTutorialPrompt.Instance.SetCaughtFish();
                 break;
             case HookState.Failed:
                 if (splashingFightingSoundDestroyer != null) {

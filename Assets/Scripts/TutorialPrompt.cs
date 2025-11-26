@@ -10,8 +10,12 @@ public class TutorialPrompt : MonoBehaviour
     [SerializeField] String tutorialText;
     [SerializeField] int dayToTrigger;
     [SerializeField] bool shouldFreezeTime;
+    [SerializeField] bool shownOnce;
+
+    private bool shownToPlayer;
 
     public static bool timeFrozen;
+
     public static void FreezeTime()
     {
         Time.timeScale = 0f;
@@ -30,11 +34,13 @@ public class TutorialPrompt : MonoBehaviour
     private void Start()
     {
         arrow.SetActive(false);
+        shownToPlayer = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (GameManager.Instance.GetDay() == dayToTrigger) {
+            if (shownOnce && shownToPlayer) return;
             if (other.TryGetComponent(out PlayerMovement player))
             {
                 tutorialPanel.SetActive(true);
@@ -44,6 +50,7 @@ public class TutorialPrompt : MonoBehaviour
                 if (shouldFreezeTime) {
                     FreezeTime();
                 }
+                shownToPlayer = true;
             }
         }
     }

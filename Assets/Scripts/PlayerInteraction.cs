@@ -155,6 +155,10 @@ public class PlayerInteraction : MonoBehaviour
         switch (action)
         {
             case InteractActionType.UnfreezeTime:
+                if (CatchBarTutorialPrompt.Instance.GetShowingNow())
+                {
+                    CatchBarTutorialPrompt.Instance.Close();
+                }
                 TutorialPrompt.UnfreezeTime();
                 break;
             case InteractActionType.PutDownBucket:

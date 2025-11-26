@@ -31,6 +31,11 @@ public class EscapeManager : MonoBehaviour
         activeWindow = window;
     }
 
+    public GameObject GetActiveWindow()
+    {
+        return activeWindow;
+    }
+
     private void GameInput_OnEscapeAction(object sender, EventArgs e)
     {
         if (activeWindow != null)
