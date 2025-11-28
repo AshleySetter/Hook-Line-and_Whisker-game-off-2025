@@ -71,4 +71,9 @@ public class EndRunScreen : MonoBehaviour
     public void AddToUpgradesBought(int number) {
         upgradesBought += number;
     }
+
+    public int GetFishCaught()
+    {
+        return fishCaught;
+    }
 }
