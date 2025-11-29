@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4452142576871211442, guid: 4a593008d3f56224e99550a32020b0cb, type: 3}
+  m_Sprite: {fileID: -4688713318967778014, guid: e60a2c3b8e9bc2f49b742f835673ad50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 724e1870c5608824bab7e4fd8ae89b95, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 2e8fe31bd93d53640b7bf38778864418, type: 3}
 --- !u!114 &5841031261129986035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +316,7 @@ MonoBehaviour:
   - {fileID: 7108339969198208228, guid: 5743457b55618144b9114e91a6c5b2a7, type: 3}
   - {fileID: 7108339969198208228, guid: 36d1458f9579b1542b8590ba929d7ace, type: 3}
   - {fileID: 7108339969198208228, guid: 724e1870c5608824bab7e4fd8ae89b95, type: 3}
+  - {fileID: 7108339969198208228, guid: 2e8fe31bd93d53640b7bf38778864418, type: 3}
 --- !u!58 &5445574009612226
 CircleCollider2D:
   m_ObjectHideFlags: 0
