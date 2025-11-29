@@ -92,6 +92,10 @@ public class FishingHook : MonoBehaviour
 
     public void StartFishing()
     {
+        if (!CatchBarTutorialPrompt.Instance.GetCaughtFish())
+        {
+            CatchBarTutorialPrompt.Instance.Open();
+        }
         waitingTime = UnityEngine.Random.Range(minWaitingTime, maxWaitingTime);
         hookState = HookState.Waiting;
         SetBobberState(BobberState.Waiting);
@@ -236,10 +240,6 @@ public class FishingHook : MonoBehaviour
 
     private void StartFighting()
     {
-        if (!CatchBarTutorialPrompt.Instance.GetCaughtFish())
-        {
-            CatchBarTutorialPrompt.Instance.Open();
-        }
         splashingFightingSoundDestroyer = SoundFXManager.Instance.PlayLoopingSoundFXClip(splashingFightingFish, this.transform, 0.2f);
         SetBobberState(BobberState.Fighting);
         hookState = HookState.Fighting;

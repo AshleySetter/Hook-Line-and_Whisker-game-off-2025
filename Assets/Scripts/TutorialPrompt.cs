@@ -41,7 +41,7 @@ public class TutorialPrompt : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (GameManager.Instance.GetDay() == dayToTrigger) {
+        if (GameManager.Instance.GetDay() == dayToTrigger && !DayNightTimer.Instance.GetDayFinished()) {
             if (shownOnce && shownToPlayer) return;
             if (other.TryGetComponent(out PlayerMovement player))
             {
